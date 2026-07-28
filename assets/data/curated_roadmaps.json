@@ -1,0 +1,2407 @@
+[
+  {
+    "id": "roadmap_frontend",
+    "title": "Frontend Development",
+    "description": "Step by step guide to becoming a frontend developer in 2026",
+    "category": "Web Development",
+    "roadmapType": "curated",
+    "modules": [
+      {
+        "id": "mod_roadmap_frontend_1",
+        "title": "roadmap.sh & More",
+        "orderIndex": 1,
+        "moduleType": "core",
+        "nodes": [
+          {
+            "id": "node_mod_roadmap_frontend_1_0",
+            "conceptName": "roadmap.sh",
+            "orderIndex": 1
+          },
+          {
+            "id": "node_mod_roadmap_frontend_1_1",
+            "conceptName": "Visit Beginner Friendly Version",
+            "orderIndex": 2
+          },
+          {
+            "id": "node_mod_roadmap_frontend_1_2",
+            "conceptName": "Front-end",
+            "orderIndex": 3
+          },
+          {
+            "id": "node_mod_roadmap_frontend_1_3",
+            "conceptName": "Learn the basics",
+            "orderIndex": 4
+          },
+          {
+            "id": "node_mod_roadmap_frontend_1_4",
+            "conceptName": "Writing Semantic HTML",
+            "orderIndex": 5
+          },
+          {
+            "id": "node_mod_roadmap_frontend_1_5",
+            "conceptName": "Forms and Validations",
+            "orderIndex": 6
+          },
+          {
+            "id": "node_mod_roadmap_frontend_1_6",
+            "conceptName": "Accessibility",
+            "orderIndex": 7
+          },
+          {
+            "id": "node_mod_roadmap_frontend_1_7",
+            "conceptName": "GitHub",
+            "orderIndex": 8
+          },
+          {
+            "id": "node_mod_roadmap_frontend_1_8",
+            "conceptName": "GitLab",
+            "orderIndex": 9
+          },
+          {
+            "id": "node_mod_roadmap_frontend_1_9",
+            "conceptName": "JavaScript",
+            "orderIndex": 10
+          },
+          {
+            "id": "node_mod_roadmap_frontend_1_10",
+            "conceptName": "BEM",
+            "orderIndex": 11
+          },
+          {
+            "id": "node_mod_roadmap_frontend_1_11",
+            "conceptName": "Sass",
+            "orderIndex": 12
+          }
+        ]
+      },
+      {
+        "id": "mod_roadmap_frontend_2",
+        "title": "PostCSS & More",
+        "orderIndex": 2,
+        "moduleType": "core",
+        "nodes": [
+          {
+            "id": "node_mod_roadmap_frontend_2_0",
+            "conceptName": "PostCSS",
+            "orderIndex": 1
+          },
+          {
+            "id": "node_mod_roadmap_frontend_2_1",
+            "conceptName": "Prettier",
+            "orderIndex": 2
+          },
+          {
+            "id": "node_mod_roadmap_frontend_2_2",
+            "conceptName": "ESLint",
+            "orderIndex": 3
+          },
+          {
+            "id": "node_mod_roadmap_frontend_2_3",
+            "conceptName": "CORS",
+            "orderIndex": 4
+          },
+          {
+            "id": "node_mod_roadmap_frontend_2_4",
+            "conceptName": "HTTPS",
+            "orderIndex": 5
+          },
+          {
+            "id": "node_mod_roadmap_frontend_2_5",
+            "conceptName": "Content Security Policy",
+            "orderIndex": 6
+          },
+          {
+            "id": "node_mod_roadmap_frontend_2_6",
+            "conceptName": "SWC",
+            "orderIndex": 7
+          },
+          {
+            "id": "node_mod_roadmap_frontend_2_7",
+            "conceptName": "Vitest",
+            "orderIndex": 8
+          },
+          {
+            "id": "node_mod_roadmap_frontend_2_8",
+            "conceptName": "Cypress",
+            "orderIndex": 9
+          },
+          {
+            "id": "node_mod_roadmap_frontend_2_9",
+            "conceptName": "JWT, OAuth, SSO, Basic Auth, Session Auth",
+            "orderIndex": 10
+          },
+          {
+            "id": "node_mod_roadmap_frontend_2_10",
+            "conceptName": "Custom Elements",
+            "orderIndex": 11
+          },
+          {
+            "id": "node_mod_roadmap_frontend_2_11",
+            "conceptName": "Apollo",
+            "orderIndex": 12
+          }
+        ]
+      },
+      {
+        "id": "mod_roadmap_frontend_3",
+        "title": "Shadow DOM & More",
+        "orderIndex": 3,
+        "moduleType": "core",
+        "nodes": [
+          {
+            "id": "node_mod_roadmap_frontend_3_0",
+            "conceptName": "Shadow DOM",
+            "orderIndex": 1
+          },
+          {
+            "id": "node_mod_roadmap_frontend_3_1",
+            "conceptName": "PRPL Pattern",
+            "orderIndex": 2
+          },
+          {
+            "id": "node_mod_roadmap_frontend_3_2",
+            "conceptName": "React Native",
+            "orderIndex": 3
+          },
+          {
+            "id": "node_mod_roadmap_frontend_3_3",
+            "conceptName": "Astro",
+            "orderIndex": 4
+          },
+          {
+            "id": "node_mod_roadmap_frontend_3_4",
+            "conceptName": "Next.js",
+            "orderIndex": 5
+          },
+          {
+            "id": "node_mod_roadmap_frontend_3_5",
+            "conceptName": "RAIL Model",
+            "orderIndex": 6
+          },
+          {
+            "id": "node_mod_roadmap_frontend_3_6",
+            "conceptName": "Flutter",
+            "orderIndex": 7
+          },
+          {
+            "id": "node_mod_roadmap_frontend_3_7",
+            "conceptName": "Performance Metrics",
+            "orderIndex": 8
+          },
+          {
+            "id": "node_mod_roadmap_frontend_3_8",
+            "conceptName": "Vuepress",
+            "orderIndex": 9
+          },
+          {
+            "id": "node_mod_roadmap_frontend_3_9",
+            "conceptName": "Using Lighthouse",
+            "orderIndex": 10
+          },
+          {
+            "id": "node_mod_roadmap_frontend_3_10",
+            "conceptName": "Measure & Improve Perf.",
+            "orderIndex": 11
+          },
+          {
+            "id": "node_mod_roadmap_frontend_3_11",
+            "conceptName": "Web Sockets",
+            "orderIndex": 12
+          }
+        ]
+      },
+      {
+        "id": "mod_roadmap_frontend_4",
+        "title": "Server Sent Events & More",
+        "orderIndex": 4,
+        "moduleType": "core",
+        "nodes": [
+          {
+            "id": "node_mod_roadmap_frontend_4_0",
+            "conceptName": "Server Sent Events",
+            "orderIndex": 1
+          },
+          {
+            "id": "node_mod_roadmap_frontend_4_1",
+            "conceptName": "Service Workers",
+            "orderIndex": 2
+          },
+          {
+            "id": "node_mod_roadmap_frontend_4_2",
+            "conceptName": "Location",
+            "orderIndex": 3
+          },
+          {
+            "id": "node_mod_roadmap_frontend_4_3",
+            "conceptName": "Notifications",
+            "orderIndex": 4
+          },
+          {
+            "id": "node_mod_roadmap_frontend_4_4",
+            "conceptName": "Device Orientation",
+            "orderIndex": 5
+          },
+          {
+            "id": "node_mod_roadmap_frontend_4_5",
+            "conceptName": "Payments",
+            "orderIndex": 6
+          },
+          {
+            "id": "node_mod_roadmap_frontend_4_6",
+            "conceptName": "Credentials",
+            "orderIndex": 7
+          },
+          {
+            "id": "node_mod_roadmap_frontend_4_7",
+            "conceptName": "TypeScript",
+            "orderIndex": 8
+          },
+          {
+            "id": "node_mod_roadmap_frontend_4_8",
+            "conceptName": "Nodejs",
+            "orderIndex": 9
+          },
+          {
+            "id": "node_mod_roadmap_frontend_4_9",
+            "conceptName": "Fullstack",
+            "orderIndex": 10
+          },
+          {
+            "id": "node_mod_roadmap_frontend_4_10",
+            "conceptName": "Browser APIs",
+            "orderIndex": 11
+          },
+          {
+            "id": "node_mod_roadmap_frontend_4_11",
+            "conceptName": "Internet",
+            "orderIndex": 12
+          }
+        ]
+      },
+      {
+        "id": "mod_roadmap_frontend_5",
+        "title": "CSS & More",
+        "orderIndex": 5,
+        "moduleType": "core",
+        "nodes": [
+          {
+            "id": "node_mod_roadmap_frontend_5_0",
+            "conceptName": "CSS",
+            "orderIndex": 1
+          },
+          {
+            "id": "node_mod_roadmap_frontend_5_1",
+            "conceptName": "Learn the Basics",
+            "orderIndex": 2
+          },
+          {
+            "id": "node_mod_roadmap_frontend_5_2",
+            "conceptName": "Learn DOM Manipulation",
+            "orderIndex": 3
+          },
+          {
+            "id": "node_mod_roadmap_frontend_5_3",
+            "conceptName": "Fetch API / Ajax (XHR)",
+            "orderIndex": 4
+          },
+          {
+            "id": "node_mod_roadmap_frontend_5_4",
+            "conceptName": "Version Control Systems",
+            "orderIndex": 5
+          },
+          {
+            "id": "node_mod_roadmap_frontend_5_5",
+            "conceptName": "CSS Architecture",
+            "orderIndex": 6
+          },
+          {
+            "id": "node_mod_roadmap_frontend_5_6",
+            "conceptName": "How does the internet work?",
+            "orderIndex": 7
+          },
+          {
+            "id": "node_mod_roadmap_frontend_5_7",
+            "conceptName": "What is HTTP?",
+            "orderIndex": 8
+          },
+          {
+            "id": "node_mod_roadmap_frontend_5_8",
+            "conceptName": "What is Domain Name?",
+            "orderIndex": 9
+          },
+          {
+            "id": "node_mod_roadmap_frontend_5_9",
+            "conceptName": "What is hosting?",
+            "orderIndex": 10
+          },
+          {
+            "id": "node_mod_roadmap_frontend_5_10",
+            "conceptName": "DNS and how it works?",
+            "orderIndex": 11
+          },
+          {
+            "id": "node_mod_roadmap_frontend_5_11",
+            "conceptName": "Browsers and how they work?",
+            "orderIndex": 12
+          }
+        ]
+      },
+      {
+        "id": "mod_roadmap_frontend_6",
+        "title": "HTML & More",
+        "orderIndex": 6,
+        "moduleType": "core",
+        "nodes": [
+          {
+            "id": "node_mod_roadmap_frontend_6_0",
+            "conceptName": "HTML",
+            "orderIndex": 1
+          },
+          {
+            "id": "node_mod_roadmap_frontend_6_1",
+            "conceptName": "Learn the basics",
+            "orderIndex": 2
+          },
+          {
+            "id": "node_mod_roadmap_frontend_6_2",
+            "conceptName": "Making Layouts",
+            "orderIndex": 3
+          },
+          {
+            "id": "node_mod_roadmap_frontend_6_3",
+            "conceptName": "Responsive Design",
+            "orderIndex": 4
+          },
+          {
+            "id": "node_mod_roadmap_frontend_6_4",
+            "conceptName": "VCS Hosting",
+            "orderIndex": 5
+          },
+          {
+            "id": "node_mod_roadmap_frontend_6_5",
+            "conceptName": "Git",
+            "orderIndex": 6
+          },
+          {
+            "id": "node_mod_roadmap_frontend_6_6",
+            "conceptName": "CSS Preprocessors",
+            "orderIndex": 7
+          },
+          {
+            "id": "node_mod_roadmap_frontend_6_7",
+            "conceptName": "SEO Basics",
+            "orderIndex": 8
+          },
+          {
+            "id": "node_mod_roadmap_frontend_6_8",
+            "conceptName": "Bitbucket",
+            "orderIndex": 9
+          },
+          {
+            "id": "node_mod_roadmap_frontend_6_9",
+            "conceptName": "Package Managers",
+            "orderIndex": 10
+          },
+          {
+            "id": "node_mod_roadmap_frontend_6_10",
+            "conceptName": "Build Tools",
+            "orderIndex": 11
+          },
+          {
+            "id": "node_mod_roadmap_frontend_6_11",
+            "conceptName": "pnpm",
+            "orderIndex": 12
+          }
+        ]
+      },
+      {
+        "id": "mod_roadmap_frontend_7",
+        "title": "npm & More",
+        "orderIndex": 7,
+        "moduleType": "core",
+        "nodes": [
+          {
+            "id": "node_mod_roadmap_frontend_7_0",
+            "conceptName": "npm",
+            "orderIndex": 1
+          },
+          {
+            "id": "node_mod_roadmap_frontend_7_1",
+            "conceptName": "yarn",
+            "orderIndex": 2
+          },
+          {
+            "id": "node_mod_roadmap_frontend_7_2",
+            "conceptName": "Pick a Framework",
+            "orderIndex": 3
+          },
+          {
+            "id": "node_mod_roadmap_frontend_7_3",
+            "conceptName": "Module Bundlers",
+            "orderIndex": 4
+          },
+          {
+            "id": "node_mod_roadmap_frontend_7_4",
+            "conceptName": "Linters and Formatters",
+            "orderIndex": 5
+          },
+          {
+            "id": "node_mod_roadmap_frontend_7_5",
+            "conceptName": "Testing",
+            "orderIndex": 6
+          },
+          {
+            "id": "node_mod_roadmap_frontend_7_6",
+            "conceptName": "Angular",
+            "orderIndex": 7
+          },
+          {
+            "id": "node_mod_roadmap_frontend_7_7",
+            "conceptName": "React",
+            "orderIndex": 8
+          },
+          {
+            "id": "node_mod_roadmap_frontend_7_8",
+            "conceptName": "Vue.js",
+            "orderIndex": 9
+          },
+          {
+            "id": "node_mod_roadmap_frontend_7_9",
+            "conceptName": "Svelte",
+            "orderIndex": 10
+          },
+          {
+            "id": "node_mod_roadmap_frontend_7_10",
+            "conceptName": "Solid JS",
+            "orderIndex": 11
+          },
+          {
+            "id": "node_mod_roadmap_frontend_7_11",
+            "conceptName": "Qwik",
+            "orderIndex": 12
+          }
+        ]
+      },
+      {
+        "id": "mod_roadmap_frontend_8",
+        "title": "Writing CSS & More",
+        "orderIndex": 8,
+        "moduleType": "core",
+        "nodes": [
+          {
+            "id": "node_mod_roadmap_frontend_8_0",
+            "conceptName": "Writing CSS",
+            "orderIndex": 1
+          },
+          {
+            "id": "node_mod_roadmap_frontend_8_1",
+            "conceptName": "Vite",
+            "orderIndex": 2
+          },
+          {
+            "id": "node_mod_roadmap_frontend_8_2",
+            "conceptName": "esbuild",
+            "orderIndex": 3
+          },
+          {
+            "id": "node_mod_roadmap_frontend_8_3",
+            "conceptName": "Webpack",
+            "orderIndex": 4
+          },
+          {
+            "id": "node_mod_roadmap_frontend_8_4",
+            "conceptName": "Rollup",
+            "orderIndex": 5
+          },
+          {
+            "id": "node_mod_roadmap_frontend_8_5",
+            "conceptName": "Parcel",
+            "orderIndex": 6
+          },
+          {
+            "id": "node_mod_roadmap_frontend_8_6",
+            "conceptName": "Playwright",
+            "orderIndex": 7
+          },
+          {
+            "id": "node_mod_roadmap_frontend_8_7",
+            "conceptName": "Jest",
+            "orderIndex": 8
+          },
+          {
+            "id": "node_mod_roadmap_frontend_8_8",
+            "conceptName": "Authentication Strategies",
+            "orderIndex": 9
+          },
+          {
+            "id": "node_mod_roadmap_frontend_8_9",
+            "conceptName": "Tailwind",
+            "orderIndex": 10
+          },
+          {
+            "id": "node_mod_roadmap_frontend_8_10",
+            "conceptName": "Web Security Basics",
+            "orderIndex": 11
+          },
+          {
+            "id": "node_mod_roadmap_frontend_8_11",
+            "conceptName": "OWASP Security Risks",
+            "orderIndex": 12
+          }
+        ]
+      },
+      {
+        "id": "mod_roadmap_frontend_9",
+        "title": "Web Components & More",
+        "orderIndex": 9,
+        "moduleType": "core",
+        "nodes": [
+          {
+            "id": "node_mod_roadmap_frontend_9_0",
+            "conceptName": "Web Components",
+            "orderIndex": 1
+          },
+          {
+            "id": "node_mod_roadmap_frontend_9_1",
+            "conceptName": "HTML Templates",
+            "orderIndex": 2
+          },
+          {
+            "id": "node_mod_roadmap_frontend_9_2",
+            "conceptName": "Type Checkers",
+            "orderIndex": 3
+          },
+          {
+            "id": "node_mod_roadmap_frontend_9_3",
+            "conceptName": "TypeScript",
+            "orderIndex": 4
+          },
+          {
+            "id": "node_mod_roadmap_frontend_9_4",
+            "conceptName": "SSR",
+            "orderIndex": 5
+          },
+          {
+            "id": "node_mod_roadmap_frontend_9_5",
+            "conceptName": "GraphQL",
+            "orderIndex": 6
+          },
+          {
+            "id": "node_mod_roadmap_frontend_9_6",
+            "conceptName": "React",
+            "orderIndex": 7
+          },
+          {
+            "id": "node_mod_roadmap_frontend_9_7",
+            "conceptName": "Angular",
+            "orderIndex": 8
+          },
+          {
+            "id": "node_mod_roadmap_frontend_9_8",
+            "conceptName": "Vue.js",
+            "orderIndex": 9
+          },
+          {
+            "id": "node_mod_roadmap_frontend_9_9",
+            "conceptName": "Svelte",
+            "orderIndex": 10
+          },
+          {
+            "id": "node_mod_roadmap_frontend_9_10",
+            "conceptName": "Relay Modern",
+            "orderIndex": 11
+          },
+          {
+            "id": "node_mod_roadmap_frontend_9_11",
+            "conceptName": "PWAs",
+            "orderIndex": 12
+          }
+        ]
+      },
+      {
+        "id": "mod_roadmap_frontend_10",
+        "title": "Astro & More",
+        "orderIndex": 10,
+        "moduleType": "core",
+        "nodes": [
+          {
+            "id": "node_mod_roadmap_frontend_10_0",
+            "conceptName": "Astro",
+            "orderIndex": 1
+          },
+          {
+            "id": "node_mod_roadmap_frontend_10_1",
+            "conceptName": "react-router",
+            "orderIndex": 2
+          },
+          {
+            "id": "node_mod_roadmap_frontend_10_2",
+            "conceptName": "Next.js",
+            "orderIndex": 3
+          },
+          {
+            "id": "node_mod_roadmap_frontend_10_3",
+            "conceptName": "Nuxt.js",
+            "orderIndex": 4
+          },
+          {
+            "id": "node_mod_roadmap_frontend_10_4",
+            "conceptName": "Svelte Kit",
+            "orderIndex": 5
+          },
+          {
+            "id": "node_mod_roadmap_frontend_10_5",
+            "conceptName": "Performance Best Practices",
+            "orderIndex": 6
+          },
+          {
+            "id": "node_mod_roadmap_frontend_10_6",
+            "conceptName": "Using DevTools",
+            "orderIndex": 7
+          },
+          {
+            "id": "node_mod_roadmap_frontend_10_7",
+            "conceptName": "Static Site Generators",
+            "orderIndex": 8
+          },
+          {
+            "id": "node_mod_roadmap_frontend_10_8",
+            "conceptName": "Storage",
+            "orderIndex": 9
+          },
+          {
+            "id": "node_mod_roadmap_frontend_10_9",
+            "conceptName": "Mobile Apps",
+            "orderIndex": 10
+          },
+          {
+            "id": "node_mod_roadmap_frontend_10_10",
+            "conceptName": "Eleventy",
+            "orderIndex": 11
+          },
+          {
+            "id": "node_mod_roadmap_frontend_10_11",
+            "conceptName": "Nuxt.js",
+            "orderIndex": 12
+          }
+        ]
+      },
+      {
+        "id": "mod_roadmap_frontend_11",
+        "title": "Ionic & More",
+        "orderIndex": 11,
+        "moduleType": "core",
+        "nodes": [
+          {
+            "id": "node_mod_roadmap_frontend_11_0",
+            "conceptName": "Ionic",
+            "orderIndex": 1
+          },
+          {
+            "id": "node_mod_roadmap_frontend_11_1",
+            "conceptName": "Desktop Apps",
+            "orderIndex": 2
+          },
+          {
+            "id": "node_mod_roadmap_frontend_11_2",
+            "conceptName": "Electron",
+            "orderIndex": 3
+          },
+          {
+            "id": "node_mod_roadmap_frontend_11_3",
+            "conceptName": "Tauri",
+            "orderIndex": 4
+          },
+          {
+            "id": "node_mod_roadmap_frontend_11_4",
+            "conceptName": "Flutter",
+            "orderIndex": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "roadmap_backend",
+    "title": "Backend Development",
+    "description": "Step by step guide to becoming a backend developer in 2026",
+    "category": "Web Development",
+    "roadmapType": "curated",
+    "modules": [
+      {
+        "id": "mod_roadmap_backend_1",
+        "title": "roadmap.sh & More",
+        "orderIndex": 1,
+        "moduleType": "core",
+        "nodes": [
+          {
+            "id": "node_mod_roadmap_backend_1_0",
+            "conceptName": "roadmap.sh",
+            "orderIndex": 1
+          },
+          {
+            "id": "node_mod_roadmap_backend_1_1",
+            "conceptName": "Visit Beginner Friendly Version",
+            "orderIndex": 2
+          },
+          {
+            "id": "node_mod_roadmap_backend_1_2",
+            "conceptName": "Backend",
+            "orderIndex": 3
+          },
+          {
+            "id": "node_mod_roadmap_backend_1_3",
+            "conceptName": "Go",
+            "orderIndex": 4
+          },
+          {
+            "id": "node_mod_roadmap_backend_1_4",
+            "conceptName": "JavaScript",
+            "orderIndex": 5
+          },
+          {
+            "id": "node_mod_roadmap_backend_1_5",
+            "conceptName": "Python",
+            "orderIndex": 6
+          },
+          {
+            "id": "node_mod_roadmap_backend_1_6",
+            "conceptName": "Ruby",
+            "orderIndex": 7
+          },
+          {
+            "id": "node_mod_roadmap_backend_1_7",
+            "conceptName": "Java",
+            "orderIndex": 8
+          },
+          {
+            "id": "node_mod_roadmap_backend_1_8",
+            "conceptName": "C#",
+            "orderIndex": 9
+          },
+          {
+            "id": "node_mod_roadmap_backend_1_9",
+            "conceptName": "PHP",
+            "orderIndex": 10
+          },
+          {
+            "id": "node_mod_roadmap_backend_1_10",
+            "conceptName": "GitHub",
+            "orderIndex": 11
+          },
+          {
+            "id": "node_mod_roadmap_backend_1_11",
+            "conceptName": "HATEOAS",
+            "orderIndex": 12
+          }
+        ]
+      },
+      {
+        "id": "mod_roadmap_backend_2",
+        "title": "Redis & More",
+        "orderIndex": 2,
+        "moduleType": "core",
+        "nodes": [
+          {
+            "id": "node_mod_roadmap_backend_2_0",
+            "conceptName": "Redis",
+            "orderIndex": 1
+          },
+          {
+            "id": "node_mod_roadmap_backend_2_1",
+            "conceptName": "Open API Specs",
+            "orderIndex": 2
+          },
+          {
+            "id": "node_mod_roadmap_backend_2_2",
+            "conceptName": "Authentication",
+            "orderIndex": 3
+          },
+          {
+            "id": "node_mod_roadmap_backend_2_3",
+            "conceptName": "JWT",
+            "orderIndex": 4
+          },
+          {
+            "id": "node_mod_roadmap_backend_2_4",
+            "conceptName": "OAuth",
+            "orderIndex": 5
+          },
+          {
+            "id": "node_mod_roadmap_backend_2_5",
+            "conceptName": "Basic Authentication",
+            "orderIndex": 6
+          },
+          {
+            "id": "node_mod_roadmap_backend_2_6",
+            "conceptName": "Token Authentication",
+            "orderIndex": 7
+          },
+          {
+            "id": "node_mod_roadmap_backend_2_7",
+            "conceptName": "Cookie Based Auth",
+            "orderIndex": 8
+          },
+          {
+            "id": "node_mod_roadmap_backend_2_8",
+            "conceptName": "JSON APIs",
+            "orderIndex": 9
+          },
+          {
+            "id": "node_mod_roadmap_backend_2_9",
+            "conceptName": "OpenID",
+            "orderIndex": 10
+          },
+          {
+            "id": "node_mod_roadmap_backend_2_10",
+            "conceptName": "SAML",
+            "orderIndex": 11
+          },
+          {
+            "id": "node_mod_roadmap_backend_2_11",
+            "conceptName": "SOAP",
+            "orderIndex": 12
+          }
+        ]
+      },
+      {
+        "id": "mod_roadmap_backend_3",
+        "title": "gRPC & More",
+        "orderIndex": 3,
+        "moduleType": "core",
+        "nodes": [
+          {
+            "id": "node_mod_roadmap_backend_3_0",
+            "conceptName": "gRPC",
+            "orderIndex": 1
+          },
+          {
+            "id": "node_mod_roadmap_backend_3_1",
+            "conceptName": "GraphQL",
+            "orderIndex": 2
+          },
+          {
+            "id": "node_mod_roadmap_backend_3_2",
+            "conceptName": "Hashing Algorithms",
+            "orderIndex": 3
+          },
+          {
+            "id": "node_mod_roadmap_backend_3_3",
+            "conceptName": "OWASP Risks",
+            "orderIndex": 4
+          },
+          {
+            "id": "node_mod_roadmap_backend_3_4",
+            "conceptName": "HTTPS",
+            "orderIndex": 5
+          },
+          {
+            "id": "node_mod_roadmap_backend_3_5",
+            "conceptName": "SSL/TLS",
+            "orderIndex": 6
+          },
+          {
+            "id": "node_mod_roadmap_backend_3_6",
+            "conceptName": "CORS",
+            "orderIndex": 7
+          },
+          {
+            "id": "node_mod_roadmap_backend_3_7",
+            "conceptName": "Server Security",
+            "orderIndex": 8
+          },
+          {
+            "id": "node_mod_roadmap_backend_3_8",
+            "conceptName": "CSP",
+            "orderIndex": 9
+          },
+          {
+            "id": "node_mod_roadmap_backend_3_9",
+            "conceptName": "API Security Best Practices",
+            "orderIndex": 10
+          },
+          {
+            "id": "node_mod_roadmap_backend_3_10",
+            "conceptName": "Microservices",
+            "orderIndex": 11
+          },
+          {
+            "id": "node_mod_roadmap_backend_3_11",
+            "conceptName": "SOA",
+            "orderIndex": 12
+          }
+        ]
+      },
+      {
+        "id": "mod_roadmap_backend_4",
+        "title": "Serverless & More",
+        "orderIndex": 4,
+        "moduleType": "core",
+        "nodes": [
+          {
+            "id": "node_mod_roadmap_backend_4_0",
+            "conceptName": "Serverless",
+            "orderIndex": 1
+          },
+          {
+            "id": "node_mod_roadmap_backend_4_1",
+            "conceptName": "Docker",
+            "orderIndex": 2
+          },
+          {
+            "id": "node_mod_roadmap_backend_4_2",
+            "conceptName": "Service Mesh",
+            "orderIndex": 3
+          },
+          {
+            "id": "node_mod_roadmap_backend_4_3",
+            "conceptName": "LXC",
+            "orderIndex": 4
+          },
+          {
+            "id": "node_mod_roadmap_backend_4_4",
+            "conceptName": "Twelve Factor Apps",
+            "orderIndex": 5
+          },
+          {
+            "id": "node_mod_roadmap_backend_4_5",
+            "conceptName": "Caddy",
+            "orderIndex": 6
+          },
+          {
+            "id": "node_mod_roadmap_backend_4_6",
+            "conceptName": "RabbitMQ",
+            "orderIndex": 7
+          },
+          {
+            "id": "node_mod_roadmap_backend_4_7",
+            "conceptName": "Elasticsearch",
+            "orderIndex": 8
+          },
+          {
+            "id": "node_mod_roadmap_backend_4_8",
+            "conceptName": "MS IIS",
+            "orderIndex": 9
+          },
+          {
+            "id": "node_mod_roadmap_backend_4_9",
+            "conceptName": "Kafka",
+            "orderIndex": 10
+          },
+          {
+            "id": "node_mod_roadmap_backend_4_10",
+            "conceptName": "Solr",
+            "orderIndex": 11
+          },
+          {
+            "id": "node_mod_roadmap_backend_4_11",
+            "conceptName": "Redis",
+            "orderIndex": 12
+          }
+        ]
+      },
+      {
+        "id": "mod_roadmap_backend_5",
+        "title": "MongoDB & More",
+        "orderIndex": 5,
+        "moduleType": "core",
+        "nodes": [
+          {
+            "id": "node_mod_roadmap_backend_5_0",
+            "conceptName": "MongoDB",
+            "orderIndex": 1
+          },
+          {
+            "id": "node_mod_roadmap_backend_5_1",
+            "conceptName": "DynamoDB",
+            "orderIndex": 2
+          },
+          {
+            "id": "node_mod_roadmap_backend_5_2",
+            "conceptName": "CouchDB",
+            "orderIndex": 3
+          },
+          {
+            "id": "node_mod_roadmap_backend_5_3",
+            "conceptName": "Firebase",
+            "orderIndex": 4
+          },
+          {
+            "id": "node_mod_roadmap_backend_5_4",
+            "conceptName": "RethinkDB",
+            "orderIndex": 5
+          },
+          {
+            "id": "node_mod_roadmap_backend_5_5",
+            "conceptName": "Graceful Degradation",
+            "orderIndex": 6
+          },
+          {
+            "id": "node_mod_roadmap_backend_5_6",
+            "conceptName": "Throttling",
+            "orderIndex": 7
+          },
+          {
+            "id": "node_mod_roadmap_backend_5_7",
+            "conceptName": "Neo4j",
+            "orderIndex": 8
+          },
+          {
+            "id": "node_mod_roadmap_backend_5_8",
+            "conceptName": "Cassandra",
+            "orderIndex": 9
+          },
+          {
+            "id": "node_mod_roadmap_backend_5_9",
+            "conceptName": "Influx DB",
+            "orderIndex": 10
+          },
+          {
+            "id": "node_mod_roadmap_backend_5_10",
+            "conceptName": "Backpressure",
+            "orderIndex": 11
+          },
+          {
+            "id": "node_mod_roadmap_backend_5_11",
+            "conceptName": "Loadshifting",
+            "orderIndex": 12
+          }
+        ]
+      },
+      {
+        "id": "mod_roadmap_backend_6",
+        "title": "Base & More",
+        "orderIndex": 6,
+        "moduleType": "core",
+        "nodes": [
+          {
+            "id": "node_mod_roadmap_backend_6_0",
+            "conceptName": "Base",
+            "orderIndex": 1
+          },
+          {
+            "id": "node_mod_roadmap_backend_6_1",
+            "conceptName": "TimeScale",
+            "orderIndex": 2
+          },
+          {
+            "id": "node_mod_roadmap_backend_6_2",
+            "conceptName": "AWS Neptune",
+            "orderIndex": 3
+          },
+          {
+            "id": "node_mod_roadmap_backend_6_3",
+            "conceptName": "Circuit Breaker",
+            "orderIndex": 4
+          },
+          {
+            "id": "node_mod_roadmap_backend_6_4",
+            "conceptName": "Visit the DevOps Beginner Roadmap",
+            "orderIndex": 5
+          },
+          {
+            "id": "node_mod_roadmap_backend_6_5",
+            "conceptName": "Types of Scaling",
+            "orderIndex": 6
+          },
+          {
+            "id": "node_mod_roadmap_backend_6_6",
+            "conceptName": "Instrumentation",
+            "orderIndex": 7
+          },
+          {
+            "id": "node_mod_roadmap_backend_6_7",
+            "conceptName": "Monitoring",
+            "orderIndex": 8
+          },
+          {
+            "id": "node_mod_roadmap_backend_6_8",
+            "conceptName": "Telemetry",
+            "orderIndex": 9
+          },
+          {
+            "id": "node_mod_roadmap_backend_6_9",
+            "conceptName": "Observability",
+            "orderIndex": 10
+          },
+          {
+            "id": "node_mod_roadmap_backend_6_10",
+            "conceptName": "DevOps",
+            "orderIndex": 11
+          },
+          {
+            "id": "node_mod_roadmap_backend_6_11",
+            "conceptName": "Full Stack",
+            "orderIndex": 12
+          }
+        ]
+      },
+      {
+        "id": "mod_roadmap_backend_7",
+        "title": "Internet & More",
+        "orderIndex": 7,
+        "moduleType": "core",
+        "nodes": [
+          {
+            "id": "node_mod_roadmap_backend_7_0",
+            "conceptName": "Internet",
+            "orderIndex": 1
+          },
+          {
+            "id": "node_mod_roadmap_backend_7_1",
+            "conceptName": "Web Servers",
+            "orderIndex": 2
+          },
+          {
+            "id": "node_mod_roadmap_backend_7_2",
+            "conceptName": "How does the internet work?",
+            "orderIndex": 3
+          },
+          {
+            "id": "node_mod_roadmap_backend_7_3",
+            "conceptName": "What is HTTP?",
+            "orderIndex": 4
+          },
+          {
+            "id": "node_mod_roadmap_backend_7_4",
+            "conceptName": "What is Domain Name?",
+            "orderIndex": 5
+          },
+          {
+            "id": "node_mod_roadmap_backend_7_5",
+            "conceptName": "What is hosting?",
+            "orderIndex": 6
+          },
+          {
+            "id": "node_mod_roadmap_backend_7_6",
+            "conceptName": "DNS and how it works?",
+            "orderIndex": 7
+          },
+          {
+            "id": "node_mod_roadmap_backend_7_7",
+            "conceptName": "Browsers and how they work?",
+            "orderIndex": 8
+          },
+          {
+            "id": "node_mod_roadmap_backend_7_8",
+            "conceptName": "Pick a Language",
+            "orderIndex": 9
+          },
+          {
+            "id": "node_mod_roadmap_backend_7_9",
+            "conceptName": "Nginx",
+            "orderIndex": 10
+          },
+          {
+            "id": "node_mod_roadmap_backend_7_10",
+            "conceptName": "Apache",
+            "orderIndex": 11
+          },
+          {
+            "id": "node_mod_roadmap_backend_7_11",
+            "conceptName": "Real-Time Data",
+            "orderIndex": 12
+          }
+        ]
+      },
+      {
+        "id": "mod_roadmap_backend_8",
+        "title": "Rust & More",
+        "orderIndex": 8,
+        "moduleType": "core",
+        "nodes": [
+          {
+            "id": "node_mod_roadmap_backend_8_0",
+            "conceptName": "Rust",
+            "orderIndex": 1
+          },
+          {
+            "id": "node_mod_roadmap_backend_8_1",
+            "conceptName": "Version Control Systems",
+            "orderIndex": 2
+          },
+          {
+            "id": "node_mod_roadmap_backend_8_2",
+            "conceptName": "Server Sent Events",
+            "orderIndex": 3
+          },
+          {
+            "id": "node_mod_roadmap_backend_8_3",
+            "conceptName": "WebSockets",
+            "orderIndex": 4
+          },
+          {
+            "id": "node_mod_roadmap_backend_8_4",
+            "conceptName": "Long Polling",
+            "orderIndex": 5
+          },
+          {
+            "id": "node_mod_roadmap_backend_8_5",
+            "conceptName": "Short Polling",
+            "orderIndex": 6
+          },
+          {
+            "id": "node_mod_roadmap_backend_8_6",
+            "conceptName": "GraphQL",
+            "orderIndex": 7
+          },
+          {
+            "id": "node_mod_roadmap_backend_8_7",
+            "conceptName": "Repo Hosting Services",
+            "orderIndex": 8
+          },
+          {
+            "id": "node_mod_roadmap_backend_8_8",
+            "conceptName": "Git",
+            "orderIndex": 9
+          },
+          {
+            "id": "node_mod_roadmap_backend_8_9",
+            "conceptName": "NoSQL Databases",
+            "orderIndex": 10
+          },
+          {
+            "id": "node_mod_roadmap_backend_8_10",
+            "conceptName": "Relational Databases",
+            "orderIndex": 11
+          },
+          {
+            "id": "node_mod_roadmap_backend_8_11",
+            "conceptName": "Bitbucket",
+            "orderIndex": 12
+          }
+        ]
+      },
+      {
+        "id": "mod_roadmap_backend_9",
+        "title": "GitLab & More",
+        "orderIndex": 9,
+        "moduleType": "core",
+        "nodes": [
+          {
+            "id": "node_mod_roadmap_backend_9_0",
+            "conceptName": "GitLab",
+            "orderIndex": 1
+          },
+          {
+            "id": "node_mod_roadmap_backend_9_1",
+            "conceptName": "Building For Scale",
+            "orderIndex": 2
+          },
+          {
+            "id": "node_mod_roadmap_backend_9_2",
+            "conceptName": "MySQL",
+            "orderIndex": 3
+          },
+          {
+            "id": "node_mod_roadmap_backend_9_3",
+            "conceptName": "MariaDB",
+            "orderIndex": 4
+          },
+          {
+            "id": "node_mod_roadmap_backend_9_4",
+            "conceptName": "MS SQL",
+            "orderIndex": 5
+          },
+          {
+            "id": "node_mod_roadmap_backend_9_5",
+            "conceptName": "Oracle",
+            "orderIndex": 6
+          },
+          {
+            "id": "node_mod_roadmap_backend_9_6",
+            "conceptName": "PostgreSQL",
+            "orderIndex": 7
+          },
+          {
+            "id": "node_mod_roadmap_backend_9_7",
+            "conceptName": "Learn about APIs",
+            "orderIndex": 8
+          },
+          {
+            "id": "node_mod_roadmap_backend_9_8",
+            "conceptName": "SQLite",
+            "orderIndex": 9
+          },
+          {
+            "id": "node_mod_roadmap_backend_9_9",
+            "conceptName": "Basic Infrastructure Knowledge",
+            "orderIndex": 10
+          },
+          {
+            "id": "node_mod_roadmap_backend_9_10",
+            "conceptName": "Migration Strategies",
+            "orderIndex": 11
+          },
+          {
+            "id": "node_mod_roadmap_backend_9_11",
+            "conceptName": "REST",
+            "orderIndex": 12
+          }
+        ]
+      },
+      {
+        "id": "mod_roadmap_backend_10",
+        "title": "Caching & More",
+        "orderIndex": 10,
+        "moduleType": "core",
+        "nodes": [
+          {
+            "id": "node_mod_roadmap_backend_10_0",
+            "conceptName": "Caching",
+            "orderIndex": 1
+          },
+          {
+            "id": "node_mod_roadmap_backend_10_1",
+            "conceptName": "Server Side",
+            "orderIndex": 2
+          },
+          {
+            "id": "node_mod_roadmap_backend_10_2",
+            "conceptName": "CDN",
+            "orderIndex": 3
+          },
+          {
+            "id": "node_mod_roadmap_backend_10_3",
+            "conceptName": "Client Side",
+            "orderIndex": 4
+          },
+          {
+            "id": "node_mod_roadmap_backend_10_4",
+            "conceptName": "Web Security",
+            "orderIndex": 5
+          },
+          {
+            "id": "node_mod_roadmap_backend_10_5",
+            "conceptName": "Memcached",
+            "orderIndex": 6
+          },
+          {
+            "id": "node_mod_roadmap_backend_10_6",
+            "conceptName": "scrypt",
+            "orderIndex": 7
+          },
+          {
+            "id": "node_mod_roadmap_backend_10_7",
+            "conceptName": "SHA",
+            "orderIndex": 8
+          },
+          {
+            "id": "node_mod_roadmap_backend_10_8",
+            "conceptName": "MD5",
+            "orderIndex": 9
+          },
+          {
+            "id": "node_mod_roadmap_backend_10_9",
+            "conceptName": "bcrypt",
+            "orderIndex": 10
+          },
+          {
+            "id": "node_mod_roadmap_backend_10_10",
+            "conceptName": "Testing",
+            "orderIndex": 11
+          },
+          {
+            "id": "node_mod_roadmap_backend_10_11",
+            "conceptName": "Unit Testing",
+            "orderIndex": 12
+          }
+        ]
+      },
+      {
+        "id": "mod_roadmap_backend_11",
+        "title": "Integration Testing & More",
+        "orderIndex": 11,
+        "moduleType": "core",
+        "nodes": [
+          {
+            "id": "node_mod_roadmap_backend_11_0",
+            "conceptName": "Integration Testing",
+            "orderIndex": 1
+          },
+          {
+            "id": "node_mod_roadmap_backend_11_1",
+            "conceptName": "Functional Testing",
+            "orderIndex": 2
+          },
+          {
+            "id": "node_mod_roadmap_backend_11_2",
+            "conceptName": "CI / CD",
+            "orderIndex": 3
+          },
+          {
+            "id": "node_mod_roadmap_backend_11_3",
+            "conceptName": "More about Databases",
+            "orderIndex": 4
+          },
+          {
+            "id": "node_mod_roadmap_backend_11_4",
+            "conceptName": "ORMs",
+            "orderIndex": 5
+          },
+          {
+            "id": "node_mod_roadmap_backend_11_5",
+            "conceptName": "ACID",
+            "orderIndex": 6
+          },
+          {
+            "id": "node_mod_roadmap_backend_11_6",
+            "conceptName": "Transactions",
+            "orderIndex": 7
+          },
+          {
+            "id": "node_mod_roadmap_backend_11_7",
+            "conceptName": "N+1 Problem",
+            "orderIndex": 8
+          },
+          {
+            "id": "node_mod_roadmap_backend_11_8",
+            "conceptName": "Normalization",
+            "orderIndex": 9
+          },
+          {
+            "id": "node_mod_roadmap_backend_11_9",
+            "conceptName": "Failure Modes",
+            "orderIndex": 10
+          },
+          {
+            "id": "node_mod_roadmap_backend_11_10",
+            "conceptName": "Profiling Perfor.",
+            "orderIndex": 11
+          },
+          {
+            "id": "node_mod_roadmap_backend_11_11",
+            "conceptName": "Scaling Databases",
+            "orderIndex": 12
+          }
+        ]
+      },
+      {
+        "id": "mod_roadmap_backend_12",
+        "title": "Migrations & More",
+        "orderIndex": 12,
+        "moduleType": "core",
+        "nodes": [
+          {
+            "id": "node_mod_roadmap_backend_12_0",
+            "conceptName": "Migrations",
+            "orderIndex": 1
+          },
+          {
+            "id": "node_mod_roadmap_backend_12_1",
+            "conceptName": "Database Indexes",
+            "orderIndex": 2
+          },
+          {
+            "id": "node_mod_roadmap_backend_12_2",
+            "conceptName": "Sharding Strategies",
+            "orderIndex": 3
+          },
+          {
+            "id": "node_mod_roadmap_backend_12_3",
+            "conceptName": "Data Replication",
+            "orderIndex": 4
+          },
+          {
+            "id": "node_mod_roadmap_backend_12_4",
+            "conceptName": "CAP Theorem",
+            "orderIndex": 5
+          },
+          {
+            "id": "node_mod_roadmap_backend_12_5",
+            "conceptName": "Software Design & Architecture",
+            "orderIndex": 6
+          },
+          {
+            "id": "node_mod_roadmap_backend_12_6",
+            "conceptName": "Design and Development Principles",
+            "orderIndex": 7
+          },
+          {
+            "id": "node_mod_roadmap_backend_12_7",
+            "conceptName": "Architectural Patterns",
+            "orderIndex": 8
+          },
+          {
+            "id": "node_mod_roadmap_backend_12_8",
+            "conceptName": "GOF Design Patterns",
+            "orderIndex": 9
+          },
+          {
+            "id": "node_mod_roadmap_backend_12_9",
+            "conceptName": "Domain Driven Design",
+            "orderIndex": 10
+          },
+          {
+            "id": "node_mod_roadmap_backend_12_10",
+            "conceptName": "Test Driven Development",
+            "orderIndex": 11
+          },
+          {
+            "id": "node_mod_roadmap_backend_12_11",
+            "conceptName": "CQRS",
+            "orderIndex": 12
+          }
+        ]
+      },
+      {
+        "id": "mod_roadmap_backend_13",
+        "title": "Event Sourcing & More",
+        "orderIndex": 13,
+        "moduleType": "core",
+        "nodes": [
+          {
+            "id": "node_mod_roadmap_backend_13_0",
+            "conceptName": "Event Sourcing",
+            "orderIndex": 1
+          },
+          {
+            "id": "node_mod_roadmap_backend_13_1",
+            "conceptName": "Containerization vs Virtualization",
+            "orderIndex": 2
+          },
+          {
+            "id": "node_mod_roadmap_backend_13_2",
+            "conceptName": "Monolithic Apps",
+            "orderIndex": 3
+          },
+          {
+            "id": "node_mod_roadmap_backend_13_3",
+            "conceptName": "Kubernetes",
+            "orderIndex": 4
+          },
+          {
+            "id": "node_mod_roadmap_backend_13_4",
+            "conceptName": "Message Brokers",
+            "orderIndex": 5
+          },
+          {
+            "id": "node_mod_roadmap_backend_13_5",
+            "conceptName": "Search Engines",
+            "orderIndex": 6
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "roadmap_ai",
+    "title": "AI Engineer",
+    "description": "Step by step guide to becoming an AI Engineer in 2026",
+    "category": "Artificial Intelligence",
+    "roadmapType": "curated",
+    "modules": [
+      {
+        "id": "mod_roadmap_ai_1",
+        "title": "Frontend & More",
+        "orderIndex": 1,
+        "moduleType": "core",
+        "nodes": [
+          {
+            "id": "node_mod_roadmap_ai_1_0",
+            "conceptName": "Frontend",
+            "orderIndex": 1
+          },
+          {
+            "id": "node_mod_roadmap_ai_1_1",
+            "conceptName": "Backend",
+            "orderIndex": 2
+          },
+          {
+            "id": "node_mod_roadmap_ai_1_2",
+            "conceptName": "Full-Stack",
+            "orderIndex": 3
+          },
+          {
+            "id": "node_mod_roadmap_ai_1_3",
+            "conceptName": "roadmap.sh",
+            "orderIndex": 4
+          },
+          {
+            "id": "node_mod_roadmap_ai_1_4",
+            "conceptName": "AI Engineer",
+            "orderIndex": 5
+          },
+          {
+            "id": "node_mod_roadmap_ai_1_5",
+            "conceptName": "Impact on Product Development",
+            "orderIndex": 6
+          },
+          {
+            "id": "node_mod_roadmap_ai_1_6",
+            "conceptName": "Scrimba - AI Engineer Path",
+            "orderIndex": 7
+          },
+          {
+            "id": "node_mod_roadmap_ai_1_7",
+            "conceptName": "Related Roadmaps",
+            "orderIndex": 8
+          },
+          {
+            "id": "node_mod_roadmap_ai_1_8",
+            "conceptName": "LLMs",
+            "orderIndex": 9
+          },
+          {
+            "id": "node_mod_roadmap_ai_1_9",
+            "conceptName": "AI vs AGI",
+            "orderIndex": 10
+          },
+          {
+            "id": "node_mod_roadmap_ai_1_10",
+            "conceptName": "Inference",
+            "orderIndex": 11
+          },
+          {
+            "id": "node_mod_roadmap_ai_1_11",
+            "conceptName": "Training",
+            "orderIndex": 12
+          }
+        ]
+      },
+      {
+        "id": "mod_roadmap_ai_2",
+        "title": "Embeddings & More",
+        "orderIndex": 2,
+        "moduleType": "core",
+        "nodes": [
+          {
+            "id": "node_mod_roadmap_ai_2_0",
+            "conceptName": "Embeddings",
+            "orderIndex": 1
+          },
+          {
+            "id": "node_mod_roadmap_ai_2_1",
+            "conceptName": "Pre-trained Models",
+            "orderIndex": 2
+          },
+          {
+            "id": "node_mod_roadmap_ai_2_2",
+            "conceptName": "Vector Databases",
+            "orderIndex": 3
+          },
+          {
+            "id": "node_mod_roadmap_ai_2_3",
+            "conceptName": "RAG",
+            "orderIndex": 4
+          },
+          {
+            "id": "node_mod_roadmap_ai_2_4",
+            "conceptName": "AI Agents",
+            "orderIndex": 5
+          },
+          {
+            "id": "node_mod_roadmap_ai_2_5",
+            "conceptName": "Open AI Models",
+            "orderIndex": 6
+          },
+          {
+            "id": "node_mod_roadmap_ai_2_6",
+            "conceptName": "Prompt Engineering",
+            "orderIndex": 7
+          },
+          {
+            "id": "node_mod_roadmap_ai_2_7",
+            "conceptName": "Capabilities / Context Length",
+            "orderIndex": 8
+          },
+          {
+            "id": "node_mod_roadmap_ai_2_8",
+            "conceptName": "Common Terminology",
+            "orderIndex": 9
+          },
+          {
+            "id": "node_mod_roadmap_ai_2_9",
+            "conceptName": "Cut-off Dates / Knowledge",
+            "orderIndex": 10
+          },
+          {
+            "id": "node_mod_roadmap_ai_2_10",
+            "conceptName": "Popular AI Models",
+            "orderIndex": 11
+          },
+          {
+            "id": "node_mod_roadmap_ai_2_11",
+            "conceptName": "Anthropic's Claude",
+            "orderIndex": 12
+          }
+        ]
+      },
+      {
+        "id": "mod_roadmap_ai_3",
+        "title": "Google's Gemini & More",
+        "orderIndex": 3,
+        "moduleType": "core",
+        "nodes": [
+          {
+            "id": "node_mod_roadmap_ai_3_0",
+            "conceptName": "Google's Gemini",
+            "orderIndex": 1
+          },
+          {
+            "id": "node_mod_roadmap_ai_3_1",
+            "conceptName": "Maximum Tokens",
+            "orderIndex": 2
+          },
+          {
+            "id": "node_mod_roadmap_ai_3_2",
+            "conceptName": "Azure AI",
+            "orderIndex": 3
+          },
+          {
+            "id": "node_mod_roadmap_ai_3_3",
+            "conceptName": "AWS Sagemaker",
+            "orderIndex": 4
+          },
+          {
+            "id": "node_mod_roadmap_ai_3_4",
+            "conceptName": "Token Counting",
+            "orderIndex": 5
+          },
+          {
+            "id": "node_mod_roadmap_ai_3_5",
+            "conceptName": "OpenAI API",
+            "orderIndex": 6
+          },
+          {
+            "id": "node_mod_roadmap_ai_3_6",
+            "conceptName": "Hugging Face Models",
+            "orderIndex": 7
+          },
+          {
+            "id": "node_mod_roadmap_ai_3_7",
+            "conceptName": "Pricing Considerations",
+            "orderIndex": 8
+          },
+          {
+            "id": "node_mod_roadmap_ai_3_8",
+            "conceptName": "Mistral AI",
+            "orderIndex": 9
+          },
+          {
+            "id": "node_mod_roadmap_ai_3_9",
+            "conceptName": "Cohere",
+            "orderIndex": 10
+          },
+          {
+            "id": "node_mod_roadmap_ai_3_10",
+            "conceptName": "Managing Tokens",
+            "orderIndex": 11
+          },
+          {
+            "id": "node_mod_roadmap_ai_3_11",
+            "conceptName": "Replicate",
+            "orderIndex": 12
+          }
+        ]
+      },
+      {
+        "id": "mod_roadmap_ai_4",
+        "title": "Fine-tuning & More",
+        "orderIndex": 4,
+        "moduleType": "core",
+        "nodes": [
+          {
+            "id": "node_mod_roadmap_ai_4_0",
+            "conceptName": "Fine-tuning",
+            "orderIndex": 1
+          },
+          {
+            "id": "node_mod_roadmap_ai_4_1",
+            "conceptName": "Prompt Injection Attacks",
+            "orderIndex": 2
+          },
+          {
+            "id": "node_mod_roadmap_ai_4_2",
+            "conceptName": "Security and Privacy Concerns",
+            "orderIndex": 3
+          },
+          {
+            "id": "node_mod_roadmap_ai_4_3",
+            "conceptName": "Bias and Fairness",
+            "orderIndex": 4
+          },
+          {
+            "id": "node_mod_roadmap_ai_4_4",
+            "conceptName": "Understanding AI Safety Issues",
+            "orderIndex": 5
+          },
+          {
+            "id": "node_mod_roadmap_ai_4_5",
+            "conceptName": "OpenAI Moderation API",
+            "orderIndex": 6
+          },
+          {
+            "id": "node_mod_roadmap_ai_4_6",
+            "conceptName": "Hugging Face",
+            "orderIndex": 7
+          },
+          {
+            "id": "node_mod_roadmap_ai_4_7",
+            "conceptName": "Adding end-user IDs in prompts",
+            "orderIndex": 8
+          },
+          {
+            "id": "node_mod_roadmap_ai_4_8",
+            "conceptName": "Finding Open Source Models",
+            "orderIndex": 9
+          },
+          {
+            "id": "node_mod_roadmap_ai_4_9",
+            "conceptName": "Conducting adversarial testing",
+            "orderIndex": 10
+          },
+          {
+            "id": "node_mod_roadmap_ai_4_10",
+            "conceptName": "Hugging Face Tasks",
+            "orderIndex": 11
+          },
+          {
+            "id": "node_mod_roadmap_ai_4_11",
+            "conceptName": "Robust prompt engineering",
+            "orderIndex": 12
+          }
+        ]
+      },
+      {
+        "id": "mod_roadmap_ai_5",
+        "title": "Hugging Face Hub & More",
+        "orderIndex": 5,
+        "moduleType": "core",
+        "nodes": [
+          {
+            "id": "node_mod_roadmap_ai_5_0",
+            "conceptName": "Hugging Face Hub",
+            "orderIndex": 1
+          },
+          {
+            "id": "node_mod_roadmap_ai_5_1",
+            "conceptName": "Know your Customers / Usecases",
+            "orderIndex": 2
+          },
+          {
+            "id": "node_mod_roadmap_ai_5_2",
+            "conceptName": "Using Open Source Models",
+            "orderIndex": 3
+          },
+          {
+            "id": "node_mod_roadmap_ai_5_3",
+            "conceptName": "Constraining outputs and inputs",
+            "orderIndex": 4
+          },
+          {
+            "id": "node_mod_roadmap_ai_5_4",
+            "conceptName": "Inference SDK",
+            "orderIndex": 5
+          },
+          {
+            "id": "node_mod_roadmap_ai_5_5",
+            "conceptName": "Transformers.js",
+            "orderIndex": 6
+          },
+          {
+            "id": "node_mod_roadmap_ai_5_6",
+            "conceptName": "Safety Best Practices",
+            "orderIndex": 7
+          },
+          {
+            "id": "node_mod_roadmap_ai_5_7",
+            "conceptName": "Ollama",
+            "orderIndex": 8
+          },
+          {
+            "id": "node_mod_roadmap_ai_5_8",
+            "conceptName": "What are Embeddings",
+            "orderIndex": 9
+          },
+          {
+            "id": "node_mod_roadmap_ai_5_9",
+            "conceptName": "Open AI Embedding Models",
+            "orderIndex": 10
+          },
+          {
+            "id": "node_mod_roadmap_ai_5_10",
+            "conceptName": "Ollama Models",
+            "orderIndex": 11
+          },
+          {
+            "id": "node_mod_roadmap_ai_5_11",
+            "conceptName": "Semantic Search",
+            "orderIndex": 12
+          }
+        ]
+      },
+      {
+        "id": "mod_roadmap_ai_6",
+        "title": "Ollama SDK & More",
+        "orderIndex": 6,
+        "moduleType": "core",
+        "nodes": [
+          {
+            "id": "node_mod_roadmap_ai_6_0",
+            "conceptName": "Ollama SDK",
+            "orderIndex": 1
+          },
+          {
+            "id": "node_mod_roadmap_ai_6_1",
+            "conceptName": "Data Classification",
+            "orderIndex": 2
+          },
+          {
+            "id": "node_mod_roadmap_ai_6_2",
+            "conceptName": "Recommendation Systems",
+            "orderIndex": 3
+          },
+          {
+            "id": "node_mod_roadmap_ai_6_3",
+            "conceptName": "RAG Usecases",
+            "orderIndex": 4
+          },
+          {
+            "id": "node_mod_roadmap_ai_6_4",
+            "conceptName": "Sentence Transformers",
+            "orderIndex": 5
+          },
+          {
+            "id": "node_mod_roadmap_ai_6_5",
+            "conceptName": "Anomaly Detection",
+            "orderIndex": 6
+          },
+          {
+            "id": "node_mod_roadmap_ai_6_6",
+            "conceptName": "RAG vs Fine-tuning",
+            "orderIndex": 7
+          },
+          {
+            "id": "node_mod_roadmap_ai_6_7",
+            "conceptName": "Models on Hugging Face",
+            "orderIndex": 8
+          },
+          {
+            "id": "node_mod_roadmap_ai_6_8",
+            "conceptName": "Use Cases for Embeddings",
+            "orderIndex": 9
+          },
+          {
+            "id": "node_mod_roadmap_ai_6_9",
+            "conceptName": "Implementing RAG",
+            "orderIndex": 10
+          },
+          {
+            "id": "node_mod_roadmap_ai_6_10",
+            "conceptName": "Chunking",
+            "orderIndex": 11
+          },
+          {
+            "id": "node_mod_roadmap_ai_6_11",
+            "conceptName": "Open-Source Embeddings",
+            "orderIndex": 12
+          }
+        ]
+      },
+      {
+        "id": "mod_roadmap_ai_7",
+        "title": "Embedding & More",
+        "orderIndex": 7,
+        "moduleType": "core",
+        "nodes": [
+          {
+            "id": "node_mod_roadmap_ai_7_0",
+            "conceptName": "Embedding",
+            "orderIndex": 1
+          },
+          {
+            "id": "node_mod_roadmap_ai_7_1",
+            "conceptName": "Vector Databases",
+            "orderIndex": 2
+          },
+          {
+            "id": "node_mod_roadmap_ai_7_2",
+            "conceptName": "Vector Database",
+            "orderIndex": 3
+          },
+          {
+            "id": "node_mod_roadmap_ai_7_3",
+            "conceptName": "Retrieval Process",
+            "orderIndex": 4
+          },
+          {
+            "id": "node_mod_roadmap_ai_7_4",
+            "conceptName": "RAG Alternative",
+            "orderIndex": 5
+          },
+          {
+            "id": "node_mod_roadmap_ai_7_5",
+            "conceptName": "Purpose and Functionality",
+            "orderIndex": 6
+          },
+          {
+            "id": "node_mod_roadmap_ai_7_6",
+            "conceptName": "Generation",
+            "orderIndex": 7
+          },
+          {
+            "id": "node_mod_roadmap_ai_7_7",
+            "conceptName": "Open AI Assistant API",
+            "orderIndex": 8
+          },
+          {
+            "id": "node_mod_roadmap_ai_7_8",
+            "conceptName": "Popular Vector DBs (pick one)",
+            "orderIndex": 9
+          },
+          {
+            "id": "node_mod_roadmap_ai_7_9",
+            "conceptName": "Chroma",
+            "orderIndex": 10
+          },
+          {
+            "id": "node_mod_roadmap_ai_7_10",
+            "conceptName": "Pinecone",
+            "orderIndex": 11
+          },
+          {
+            "id": "node_mod_roadmap_ai_7_11",
+            "conceptName": "Ways of Implementing RAG",
+            "orderIndex": 12
+          }
+        ]
+      },
+      {
+        "id": "mod_roadmap_ai_8",
+        "title": "Using SDKs Directly & More",
+        "orderIndex": 8,
+        "moduleType": "core",
+        "nodes": [
+          {
+            "id": "node_mod_roadmap_ai_8_0",
+            "conceptName": "Using SDKs Directly",
+            "orderIndex": 1
+          },
+          {
+            "id": "node_mod_roadmap_ai_8_1",
+            "conceptName": "Weaviate",
+            "orderIndex": 2
+          },
+          {
+            "id": "node_mod_roadmap_ai_8_2",
+            "conceptName": "FAISS",
+            "orderIndex": 3
+          },
+          {
+            "id": "node_mod_roadmap_ai_8_3",
+            "conceptName": "Agents Usecases",
+            "orderIndex": 4
+          },
+          {
+            "id": "node_mod_roadmap_ai_8_4",
+            "conceptName": "Langchain",
+            "orderIndex": 5
+          },
+          {
+            "id": "node_mod_roadmap_ai_8_5",
+            "conceptName": "Llama Index",
+            "orderIndex": 6
+          },
+          {
+            "id": "node_mod_roadmap_ai_8_6",
+            "conceptName": "LanceDB",
+            "orderIndex": 7
+          },
+          {
+            "id": "node_mod_roadmap_ai_8_7",
+            "conceptName": "Qdrant",
+            "orderIndex": 8
+          },
+          {
+            "id": "node_mod_roadmap_ai_8_8",
+            "conceptName": "Prompt Engineering",
+            "orderIndex": 9
+          },
+          {
+            "id": "node_mod_roadmap_ai_8_9",
+            "conceptName": "Supabase",
+            "orderIndex": 10
+          },
+          {
+            "id": "node_mod_roadmap_ai_8_10",
+            "conceptName": "ReAct Prompting",
+            "orderIndex": 11
+          },
+          {
+            "id": "node_mod_roadmap_ai_8_11",
+            "conceptName": "Building AI Agents",
+            "orderIndex": 12
+          }
+        ]
+      },
+      {
+        "id": "mod_roadmap_ai_9",
+        "title": "MongoDB Atlas & More",
+        "orderIndex": 9,
+        "moduleType": "core",
+        "nodes": [
+          {
+            "id": "node_mod_roadmap_ai_9_0",
+            "conceptName": "MongoDB Atlas",
+            "orderIndex": 1
+          },
+          {
+            "id": "node_mod_roadmap_ai_9_1",
+            "conceptName": "Manual Implementation",
+            "orderIndex": 2
+          },
+          {
+            "id": "node_mod_roadmap_ai_9_2",
+            "conceptName": "AI Agents",
+            "orderIndex": 3
+          },
+          {
+            "id": "node_mod_roadmap_ai_9_3",
+            "conceptName": "Implementing Vector Search",
+            "orderIndex": 4
+          },
+          {
+            "id": "node_mod_roadmap_ai_9_4",
+            "conceptName": "OpenAI Functions / Tools",
+            "orderIndex": 5
+          },
+          {
+            "id": "node_mod_roadmap_ai_9_5",
+            "conceptName": "Indexing Embeddings",
+            "orderIndex": 6
+          },
+          {
+            "id": "node_mod_roadmap_ai_9_6",
+            "conceptName": "OpenAI Assistant API",
+            "orderIndex": 7
+          },
+          {
+            "id": "node_mod_roadmap_ai_9_7",
+            "conceptName": "Performing Similarity Search",
+            "orderIndex": 8
+          },
+          {
+            "id": "node_mod_roadmap_ai_9_8",
+            "conceptName": "OpenAI Vision API",
+            "orderIndex": 9
+          },
+          {
+            "id": "node_mod_roadmap_ai_9_9",
+            "conceptName": "Multimodal AI",
+            "orderIndex": 10
+          },
+          {
+            "id": "node_mod_roadmap_ai_9_10",
+            "conceptName": "DALL-E API",
+            "orderIndex": 11
+          },
+          {
+            "id": "node_mod_roadmap_ai_9_11",
+            "conceptName": "Image Understanding",
+            "orderIndex": 12
+          }
+        ]
+      },
+      {
+        "id": "mod_roadmap_ai_10",
+        "title": "Whisper API & More",
+        "orderIndex": 10,
+        "moduleType": "core",
+        "nodes": [
+          {
+            "id": "node_mod_roadmap_ai_10_0",
+            "conceptName": "Whisper API",
+            "orderIndex": 1
+          },
+          {
+            "id": "node_mod_roadmap_ai_10_1",
+            "conceptName": "Image Generation",
+            "orderIndex": 2
+          },
+          {
+            "id": "node_mod_roadmap_ai_10_2",
+            "conceptName": "Hugging Face Models",
+            "orderIndex": 3
+          },
+          {
+            "id": "node_mod_roadmap_ai_10_3",
+            "conceptName": "Video Understanding",
+            "orderIndex": 4
+          },
+          {
+            "id": "node_mod_roadmap_ai_10_4",
+            "conceptName": "AI Code Editors",
+            "orderIndex": 5
+          },
+          {
+            "id": "node_mod_roadmap_ai_10_5",
+            "conceptName": "LangChain for Multimodal Apps",
+            "orderIndex": 6
+          },
+          {
+            "id": "node_mod_roadmap_ai_10_6",
+            "conceptName": "Audio Processing",
+            "orderIndex": 7
+          },
+          {
+            "id": "node_mod_roadmap_ai_10_7",
+            "conceptName": "Code Completion Tools",
+            "orderIndex": 8
+          },
+          {
+            "id": "node_mod_roadmap_ai_10_8",
+            "conceptName": "LlamaIndex for Multimodal Apps",
+            "orderIndex": 9
+          },
+          {
+            "id": "node_mod_roadmap_ai_10_9",
+            "conceptName": "Text-to-Speech",
+            "orderIndex": 10
+          },
+          {
+            "id": "node_mod_roadmap_ai_10_10",
+            "conceptName": "Implementing Multimodal AI",
+            "orderIndex": 11
+          },
+          {
+            "id": "node_mod_roadmap_ai_10_11",
+            "conceptName": "Speech-to-Text",
+            "orderIndex": 12
+          }
+        ]
+      },
+      {
+        "id": "mod_roadmap_ai_11",
+        "title": "Development Tools & More",
+        "orderIndex": 11,
+        "moduleType": "core",
+        "nodes": [
+          {
+            "id": "node_mod_roadmap_ai_11_0",
+            "conceptName": "Development Tools",
+            "orderIndex": 1
+          },
+          {
+            "id": "node_mod_roadmap_ai_11_1",
+            "conceptName": "Multimodal AI Tasks",
+            "orderIndex": 2
+          },
+          {
+            "id": "node_mod_roadmap_ai_11_2",
+            "conceptName": "AI & Data Scientist",
+            "orderIndex": 3
+          },
+          {
+            "id": "node_mod_roadmap_ai_11_3",
+            "conceptName": "Prompt Engineering",
+            "orderIndex": 4
+          },
+          {
+            "id": "node_mod_roadmap_ai_11_4",
+            "conceptName": "Introduction",
+            "orderIndex": 5
+          },
+          {
+            "id": "node_mod_roadmap_ai_11_5",
+            "conceptName": "Limitations and Considerations",
+            "orderIndex": 6
+          },
+          {
+            "id": "node_mod_roadmap_ai_11_6",
+            "conceptName": "Benefits of Pre-trained Models",
+            "orderIndex": 7
+          },
+          {
+            "id": "node_mod_roadmap_ai_11_7",
+            "conceptName": "OpenAI Models",
+            "orderIndex": 8
+          },
+          {
+            "id": "node_mod_roadmap_ai_11_8",
+            "conceptName": "Chat Completions API",
+            "orderIndex": 9
+          },
+          {
+            "id": "node_mod_roadmap_ai_11_9",
+            "conceptName": "Writing Prompts",
+            "orderIndex": 10
+          },
+          {
+            "id": "node_mod_roadmap_ai_11_10",
+            "conceptName": "Open AI Playground",
+            "orderIndex": 11
+          },
+          {
+            "id": "node_mod_roadmap_ai_11_11",
+            "conceptName": "Prompt Engineering Roadmap",
+            "orderIndex": 12
+          }
+        ]
+      },
+      {
+        "id": "mod_roadmap_ai_12",
+        "title": "AI Safety and Ethics & More",
+        "orderIndex": 12,
+        "moduleType": "core",
+        "nodes": [
+          {
+            "id": "node_mod_roadmap_ai_12_0",
+            "conceptName": "AI Safety and Ethics",
+            "orderIndex": 1
+          },
+          {
+            "id": "node_mod_roadmap_ai_12_1",
+            "conceptName": "Open AI Embeddings API",
+            "orderIndex": 2
+          },
+          {
+            "id": "node_mod_roadmap_ai_12_2",
+            "conceptName": "RAG & Implementation",
+            "orderIndex": 3
+          },
+          {
+            "id": "node_mod_roadmap_ai_12_3",
+            "conceptName": "Multimodal AI Usecases",
+            "orderIndex": 4
+          },
+          {
+            "id": "node_mod_roadmap_ai_12_4",
+            "conceptName": "What is an AI Engineer?",
+            "orderIndex": 5
+          },
+          {
+            "id": "node_mod_roadmap_ai_12_5",
+            "conceptName": "AI Engineer vs ML Engineer",
+            "orderIndex": 6
+          },
+          {
+            "id": "node_mod_roadmap_ai_12_6",
+            "conceptName": "OpenSource AI",
+            "orderIndex": 7
+          },
+          {
+            "id": "node_mod_roadmap_ai_12_7",
+            "conceptName": "Pricing Considerations",
+            "orderIndex": 8
+          },
+          {
+            "id": "node_mod_roadmap_ai_12_8",
+            "conceptName": "Roles and Responsiblities",
+            "orderIndex": 9
+          },
+          {
+            "id": "node_mod_roadmap_ai_12_9",
+            "conceptName": "Open vs Closed Source Models",
+            "orderIndex": 10
+          },
+          {
+            "id": "node_mod_roadmap_ai_12_10",
+            "conceptName": "Popular Open Source Models",
+            "orderIndex": 11
+          }
+        ]
+      }
+    ]
+  }
+]
