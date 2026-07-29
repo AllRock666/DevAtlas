@@ -43,9 +43,9 @@ class ContentSourceEngine {
         retrievedAt: drift.Value(DateTime.now().toIso8601String()),
         blocksJson: drift.Value(jsonEncode(document.blocks.map((b) => (b as dynamic).toJson()).toList())),
         knowledgeArtifactJson: drift.Value(jsonEncode(artifact.toJson())),
-        explanation: const drift.Value('Extracted from source'),
-        tags: const drift.Value(''),
-        difficulty: const drift.Value('Beginner'),
+        explanation: 'Extracted from source',
+        tags: '',
+        difficulty: 'Beginner',
       )
     );
     

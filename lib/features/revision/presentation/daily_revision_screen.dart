@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import '../../../engines/revision/revision_engine.dart';
+import '../../../di/injection.dart' as di;
 
 class DailyRevisionScreen extends StatefulWidget {
   const DailyRevisionScreen({super.key});

@@ -3,6 +3,7 @@ import 'package:go_router/go_router.dart';
 import '../../../engines/revision/revision_engine.dart';
 import 'package:flutter_highlighter/flutter_highlighter.dart';
 import 'package:flutter_highlighter/themes/atom-one-dark.dart';
+import '../../../di/injection.dart' as di;
 
 class ActiveRecallScreen extends StatefulWidget {
   final DailyRevisionQueue queue;
