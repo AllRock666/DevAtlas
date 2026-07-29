@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:drift/drift.dart' as drift;
-
+import 'package:uuid/uuid.dart';
 import '../storage/database.dart';
 import 'parser_registry.dart';
 import 'generic_block_parser.dart';
@@ -21,7 +21,7 @@ class ContentSourceEngine {
     final adapter = _parserRegistry.getAdapterForUrl(url);
     
     final proxyUrl = Uri.parse('https://corsproxy.io/?url=${Uri.encodeComponent(url)}');
-    final response = await http.get(proxyUrl);
+    final response = await http.get(proxyUrl).timeout(const Duration(seconds: 10));
     
     if (response.statusCode != 200) {
       throw Exception('Failed to fetch content from $url');
@@ -32,26 +32,12 @@ class ContentSourceEngine {
     
     final document = await adapter.extractDocument(htmlContent, url, report);
     
+    final artifact = _extractionEngine.extract(document);
+    
     await _db.into(_db.knowledgeCards).insertOnConflictUpdate(
       KnowledgeCardsCompanion.insert(
         id: document.cardId,
         title: document.title,
-        sourceUrl: drift.Value(url),
-        sourceName: drift.Value(adapter.sourceName),
-        retrievedAt: drift.Value(DateTime.now().toIso8601String()),
-        blocksJson: drift.Value(jsonEncode(document.blocks.map((b) => (b as dynamic).toJson()).toList())),
-        explanation: 'Extracted from source',
-        tags: '',
-        difficulty: 'Beginner',
-      )
-    );
-    
-    final artifact = _extractionEngine.extract(document);
-    
-    await _db.update(_db.knowledgeCards).replace(
-      KnowledgeCardsCompanion(
-        id: drift.Value(document.cardId),
-        title: drift.Value(document.title),
         sourceUrl: drift.Value(url),
         sourceName: drift.Value(adapter.sourceName),
         retrievedAt: drift.Value(DateTime.now().toIso8601String()),
@@ -76,7 +62,7 @@ class ContentSourceEngine {
     for (var rel in artifact.relationships) {
        await _db.into(_db.conceptRelationships).insertOnConflictUpdate(
          ConceptRelationshipsCompanion.insert(
-           id: 'rel_${DateTime.now().millisecondsSinceEpoch}_${rel.targetConceptName}',
+           id: 'rel_${const Uuid().v4()}',
            cardId: artifact.cardId,
            targetConceptName: rel.targetConceptName,
            relationshipType: rel.relationshipType,
@@ -109,16 +95,13 @@ class ContentSourceEngine {
       // Find the best matching node in the curated roadmap
       final allNodes = await (_db.select(_db.roadmapNodes).join([
         drift.innerJoin(_db.roadmapModules, _db.roadmapModules.id.equalsExp(_db.roadmapNodes.moduleId))
-      ])..where(_db.roadmapModules.roadmapId.equals(targetCuratedRoadmapId))).get();
+      ])..where(_db.roadmapModules.roadmapId.equals(targetCuratedRoadmapId) & _db.roadmapNodes.linkedCardId.isNull())).get();
 
       RoadmapNode? bestMatch;
       double highestScore = 0.0;
 
       for (var row in allNodes) {
         final node = row.readTable(_db.roadmapNodes);
-        
-        // Skip nodes already linked
-        if (node.linkedCardId != null) continue;
 
         double score = 0.0;
         final nodeName = node.conceptName.toLowerCase();
@@ -173,7 +156,7 @@ class ContentSourceEngine {
 
         await _db.into(_db.roadmapNodes).insertOnConflictUpdate(
           RoadmapNodesCompanion.insert(
-            id: 'node_addl_${DateTime.now().millisecondsSinceEpoch}',
+            id: 'node_addl_${const Uuid().v4()}',
             moduleId: addlModId,
             conceptName: artifact.primaryConcept,
             linkedCardId: drift.Value(artifact.cardId),
@@ -223,7 +206,7 @@ class ContentSourceEngine {
 
     await _db.into(_db.roadmapNodes).insertOnConflictUpdate(
       RoadmapNodesCompanion.insert(
-        id: 'node_dyn_${DateTime.now().millisecondsSinceEpoch}',
+        id: 'node_dyn_${const Uuid().v4()}',
         moduleId: modId,
         conceptName: artifact.primaryConcept,
         linkedCardId: drift.Value(artifact.cardId),

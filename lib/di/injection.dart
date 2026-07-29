@@ -6,7 +6,8 @@ import '../engines/pipeline/parser_registry.dart';
 import '../engines/pipeline/resource_engine.dart';
 import '../engines/knowledge_extraction/knowledge_extraction_engine.dart';
 import '../engines/import_queue/import_queue_manager.dart';
-
+import '../engines/revision/revision_engine.dart';
+import '../engines/roadmap/roadmap_engine.dart';
 final getIt = GetIt.instance;
 
 Future<void> init() async {
@@ -19,6 +20,15 @@ Future<void> init() async {
     getIt<ParserRegistry>(),
     getIt<KnowledgeExtractionEngine>(),
   ));
-  getIt.registerLazySingleton<ImportQueueManager>(() => ImportQueueManager());
+  getIt.registerLazySingleton<ImportQueueManager>(() => ImportQueueManager(
+    getIt<ContentSourceEngine>(),
+    getIt<AppDatabase>(),
+  ));
   getIt.registerLazySingleton<DiscoveryEngine>(() => DiscoveryEngine());
+  getIt.registerLazySingleton<RevisionEngine>(() => RevisionEngine(
+    getIt<AppDatabase>(),
+  ));
+  getIt.registerLazySingleton<RoadmapEngine>(() => RoadmapEngine(
+    getIt<AppDatabase>(),
+  ));
 }

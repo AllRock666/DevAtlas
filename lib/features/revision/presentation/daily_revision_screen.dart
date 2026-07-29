@@ -10,7 +10,7 @@ class DailyRevisionScreen extends StatefulWidget {
 }
 
 class _DailyRevisionScreenState extends State<DailyRevisionScreen> {
-  final RevisionEngine _engine = RevisionEngine();
+  final RevisionEngine _engine = di.getIt<RevisionEngine>();
   DailyRevisionQueue? _queue;
   bool _isLoading = true;
 

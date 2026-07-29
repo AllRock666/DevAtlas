@@ -38,8 +38,10 @@ class DailyRevisionQueue {
 }
 
 class RevisionEngine {
-  final AppDatabase _db = di.getIt<AppDatabase>();
+  final AppDatabase _db;
   
+  RevisionEngine(this._db);
+
   Future<DailyRevisionQueue> generateDailyQueue() async {
     final now = DateTime.now();
     

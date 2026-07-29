@@ -14,7 +14,7 @@ class DashboardScreen extends StatefulWidget {
 
 class _DashboardScreenState extends State<DashboardScreen> {
   final _db = di.getIt<AppDatabase>();
-  final _revisionEngine = RevisionEngine();
+  final _revisionEngine = di.getIt<RevisionEngine>();
   
   DailyRevisionQueue? _revisionQueue;
   List<ExtractedConcept> _continueReading = [];

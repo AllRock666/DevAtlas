@@ -13,7 +13,7 @@ class ActiveRecallScreen extends StatefulWidget {
 }
 
 class _ActiveRecallScreenState extends State<ActiveRecallScreen> {
-  final RevisionEngine _engine = RevisionEngine();
+  final RevisionEngine _engine = di.getIt<RevisionEngine>();
   int _currentIndex = 0;
   bool _showAnswer = false;
 

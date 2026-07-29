@@ -8,8 +8,10 @@ import '../pipeline/url_normalizer.dart';
 import 'package:drift/drift.dart' as drift;
 
 class ImportQueueManager extends ChangeNotifier {
-  final ContentSourceEngine _engine = di.getIt<ContentSourceEngine>();
-  final AppDatabase _db = di.getIt<AppDatabase>();
+  final ContentSourceEngine _engine;
+  final AppDatabase _db;
+  
+  StreamSubscription? _subscription;
   
   List<ImportQueueItem> _jobs = [];
   ImportQueueItem? _currentJob;
@@ -19,7 +21,7 @@ class ImportQueueManager extends ChangeNotifier {
   ImportQueueItem? get currentJob => _currentJob;
   bool get isPaused => _isPaused;
 
-  ImportQueueManager() {
+  ImportQueueManager(this._engine, this._db) {
     _loadJobs();
     // Auto-resume on startup if not explicitly paused
     // Optionally wait a bit before starting
@@ -31,13 +33,19 @@ class ImportQueueManager extends ChangeNotifier {
   }
 
   void _loadJobs() {
-    _db.select(_db.importQueueItems).watch().listen((dbJobs) {
+    _subscription = _db.select(_db.importQueueItems).watch().listen((dbJobs) {
       _jobs = dbJobs;
       notifyListeners();
       if (!_isPaused && _currentJob == null) {
         _processQueue();
       }
     });
+  }
+  
+  @override
+  void dispose() {
+    _subscription?.cancel();
+    super.dispose();
   }
   
   Future<void> addJob(String url, {

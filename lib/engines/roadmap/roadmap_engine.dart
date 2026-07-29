@@ -24,6 +24,9 @@ class RoadmapEngine {
   
   Future<void> seedRoadmaps() async {
     try {
+      final existing = await (_db.select(_db.roadmaps)..where((t) => t.id.equals('roadmap_cpp'))).getSingleOrNull();
+      if (existing != null) return; // Already seeded
+
       final jsonString = await rootBundle.loadString('assets/data/curated_roadmaps.json');
       final List<dynamic> parsed = jsonDecode(jsonString);
 

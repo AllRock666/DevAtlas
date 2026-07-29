@@ -13,7 +13,7 @@ class RoadmapDetailScreen extends StatefulWidget {
 }
 
 class _RoadmapDetailScreenState extends State<RoadmapDetailScreen> {
-  final RoadmapEngine _engine = RoadmapEngine(di.getIt<AppDatabase>());
+  final RoadmapEngine _engine = di.getIt<RoadmapEngine>();
   List<RoadmapModuleState> _modules = [];
   Roadmap? _roadmap;
   bool _isLoading = true;
