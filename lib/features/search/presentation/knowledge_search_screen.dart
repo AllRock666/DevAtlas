@@ -183,22 +183,20 @@ class _KnowledgeSearchScreenState extends State<KnowledgeSearchScreen> {
                   else ...[
                     const Divider(height: 48),
                     Builder(builder: (c) {
-                      print('Rendering SourceViewerWidget for ${_response!.primaryConcept}');
                       return SourceViewerWidget(conceptName: _response!.primaryConcept);
                     }),
                     const SizedBox(height: 32),
                   ],
                   if (_response!.navigationActions.any((a) => a.type == KnowledgeNavigationType.viewStudyPage))
                     Builder(builder: (c) {
-                      print('Rendering LearningProgressWidget');
-                      return LearningProgressWidget(cardId: _response!.navigationActions.firstWhere((a) => a.type == KnowledgeNavigationType.viewStudyPage).targetId);
+                      final viewAction = _response!.navigationActions.where((a) => a.type == KnowledgeNavigationType.viewStudyPage).firstOrNull ?? _response!.navigationActions.firstWhere((a) => a.type == KnowledgeNavigationType.viewStudyPage);
+                      return LearningProgressWidget(cardId: viewAction.targetId);
                     }),
                   const SizedBox(height: 16),
                   const Divider(),
                   const Text('Continue Learning', style: TextStyle(fontWeight: FontWeight.bold)),
                   const SizedBox(height: 16),
                   Builder(builder: (c) {
-                    print('Rendering Wrap with ${_response!.navigationActions.length} actions');
                     return Wrap(
                       spacing: 8,
                       runSpacing: 8,

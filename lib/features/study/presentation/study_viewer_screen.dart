@@ -11,7 +11,8 @@ import 'widgets/concept_notes_sheet.dart';
 import 'widgets/add_to_collection_sheet.dart';
 import '../../settings/presentation/preferences_provider.dart';
 import '../../settings/domain/reader_preferences.dart';
-
+import 'package:drift/drift.dart' as drift;
+import 'widgets/learning_progress_widget.dart';
 class StudyViewerScreen extends ConsumerStatefulWidget {
   final RenderedStudyDocument document;
 
@@ -31,7 +32,23 @@ class _StudyViewerScreenState extends ConsumerState<StudyViewerScreen> {
   void initState() {
     super.initState();
     _loadAnnotations();
+    _seedInitialProgress();
     _scrollController.addListener(_onScroll);
+  }
+
+  Future<void> _seedInitialProgress() async {
+    final prog = await (_db.select(_db.learningProgress)..where((t) => t.cardId.equals(widget.document.cardId))).getSingleOrNull();
+    if (prog == null) {
+      await _db.into(_db.learningProgress).insertOnConflictUpdate(
+        LearningProgressCompanion.insert(
+          cardId: widget.document.cardId,
+          status: drift.Value('not_started'),
+          confidenceLevel: const drift.Value(0),
+          lastRevisedAt: drift.Value(DateTime.now()),
+          nextRevisionAt: drift.Value(DateTime.now().add(const Duration(days: 1))),
+        )
+      );
+    }
   }
 
   @override
@@ -62,10 +79,7 @@ class _StudyViewerScreenState extends ConsumerState<StudyViewerScreen> {
   }
 
   String _generateStableId(StudyBlock block) {
-    // Fallback ID generation if actual blockId is not exposed.
-    // Assuming block provides raw content or using index as a mock for now.
-    // Ideally StudyBlock should expose a `blockId` field.
-    return '${widget.document.conceptName}_${block.hashCode}'; 
+    return block.id; 
   }
 
   void _toggleFocusMode() {
@@ -137,6 +151,10 @@ class _StudyViewerScreenState extends ConsumerState<StudyViewerScreen> {
             icon: const Icon(Icons.fullscreen),
             tooltip: 'Focus Mode',
             onPressed: _toggleFocusMode,
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 8.0),
+            child: LearningProgressWidget(cardId: widget.document.cardId),
           ),
         ],
       ),

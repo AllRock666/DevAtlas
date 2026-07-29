@@ -100,12 +100,15 @@ class RevisionEngine {
     for (var concept in conceptNames) {
        final rels = await (_db.select(_db.conceptRelationships)..where((t) => t.targetConceptName.equals(concept))).get();
        if (rels.isNotEmpty) {
-          activities.add(RevisionActivity(
-            type: ActivityType.relationshipRecall,
-            conceptName: concept,
-            question: 'What concept is related to \$concept?',
-            answer: rels.first.targetConceptName, // Reverse relationship essentially
-          ));
+          final sourceCard = await (_db.select(_db.extractedConcepts)..where((t) => t.cardId.equals(rels.first.cardId))).getSingleOrNull();
+          if (sourceCard != null) {
+            activities.add(RevisionActivity(
+              type: ActivityType.relationshipRecall,
+              conceptName: concept,
+              question: 'What concept is related to $concept?',
+              answer: sourceCard.name, 
+            ));
+          }
        }
     }
     
@@ -128,31 +131,30 @@ class RevisionEngine {
     
     final prog = await (_db.select(_db.learningProgress)..where((t) => t.cardId.equals(conceptRow.cardId))).getSingleOrNull();
     
-    if (prog != null) {
-       int currentConfidence = prog.confidenceLevel;
-       int newConfidence = currentConfidence;
-       
-       if (quality >= 4) { newConfidence += 1; }
-       if (quality < 3) { newConfidence = 0; } // Reset
-       
-       if (newConfidence > 5) { newConfidence = 5; }
-       
-       // Calculate interval in days based on confidence
-       int intervalDays = 1;
-       if (newConfidence == 1) { intervalDays = 1; }
-       else if (newConfidence == 2) { intervalDays = 3; }
-       else if (newConfidence == 3) { intervalDays = 7; }
-       else if (newConfidence == 4) { intervalDays = 14; }
-       else if (newConfidence == 5) { intervalDays = 30; }
-       
-       await _db.into(_db.learningProgress).insertOnConflictUpdate(
-         prog.copyWith(
-           confidenceLevel: newConfidence,
-           lastRevisedAt: drift.Value(DateTime.now()),
-           nextRevisionAt: drift.Value(DateTime.now().add(Duration(days: intervalDays))),
-           status: newConfidence >= 4 ? 'mastered' : 'practiced',
-         )
-       );
-    }
+    int currentConfidence = prog?.confidenceLevel ?? 0;
+    int newConfidence = currentConfidence;
+    
+    if (quality >= 4) { newConfidence += 1; }
+    if (quality < 3) { newConfidence = 0; } // Reset
+    
+    if (newConfidence > 5) { newConfidence = 5; }
+    
+    // Calculate interval in days based on confidence
+    int intervalDays = 1;
+    if (newConfidence == 1) { intervalDays = 1; }
+    else if (newConfidence == 2) { intervalDays = 3; }
+    else if (newConfidence == 3) { intervalDays = 7; }
+    else if (newConfidence == 4) { intervalDays = 14; }
+    else if (newConfidence == 5) { intervalDays = 30; }
+    
+    await _db.into(_db.learningProgress).insertOnConflictUpdate(
+      LearningProgressCompanion.insert(
+        cardId: conceptRow.cardId,
+        status: drift.Value(newConfidence >= 4 ? 'mastered' : 'practiced'),
+        confidenceLevel: drift.Value(newConfidence),
+        lastRevisedAt: drift.Value(DateTime.now()),
+        nextRevisionAt: drift.Value(DateTime.now().add(Duration(days: intervalDays))),
+      )
+    );
   }
 }
