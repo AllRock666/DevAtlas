@@ -2403,5 +2403,139 @@
         ]
       }
     ]
+  },
+  {
+    "id": "roadmap_cpp_advanced",
+    "title": "Advanced C++ Mastery",
+    "description": "A comprehensive guide to mastering advanced C++ for Systems and Game Development, covering modern features, concurrency, memory management, and templates.",
+    "modules": [
+      {
+        "id": "mod_cpp_adv_1",
+        "title": "Advanced Memory Management",
+        "orderIndex": 1,
+        "moduleType": "core",
+        "nodes": [
+          {
+            "id": "node_cpp_adv_1_1",
+            "conceptName": "Move Semantics and Rvalue References",
+            "orderIndex": 1
+          },
+          {
+            "id": "node_cpp_adv_1_2",
+            "conceptName": "Smart Pointers and Ownership Models",
+            "orderIndex": 2
+          },
+          {
+            "id": "node_cpp_adv_1_3",
+            "conceptName": "Custom Allocators",
+            "orderIndex": 3
+          },
+          {
+            "id": "node_cpp_adv_1_4",
+            "conceptName": "Placement New",
+            "orderIndex": 4
+          },
+          {
+            "id": "node_cpp_adv_1_5",
+            "conceptName": "Memory Alignment",
+            "orderIndex": 5
+          }
+        ]
+      },
+      {
+        "id": "mod_cpp_adv_2",
+        "title": "Templates and Metaprogramming",
+        "orderIndex": 2,
+        "moduleType": "core",
+        "nodes": [
+          {
+            "id": "node_cpp_adv_2_1",
+            "conceptName": "Template Specialization",
+            "orderIndex": 1
+          },
+          {
+            "id": "node_cpp_adv_2_2",
+            "conceptName": "SFINAE (Substitution Failure Is Not An Error)",
+            "orderIndex": 2
+          },
+          {
+            "id": "node_cpp_adv_2_3",
+            "conceptName": "Variadic Templates",
+            "orderIndex": 3
+          },
+          {
+            "id": "node_cpp_adv_2_4",
+            "conceptName": "Type Traits and concepts",
+            "orderIndex": 4
+          },
+          {
+            "id": "node_cpp_adv_2_5",
+            "conceptName": "constexpr and consteval",
+            "orderIndex": 5
+          }
+        ]
+      },
+      {
+        "id": "mod_cpp_adv_3",
+        "title": "Concurrency and Multithreading",
+        "orderIndex": 3,
+        "moduleType": "core",
+        "nodes": [
+          {
+            "id": "node_cpp_adv_3_1",
+            "conceptName": "std::thread and Data Races",
+            "orderIndex": 1
+          },
+          {
+            "id": "node_cpp_adv_3_2",
+            "conceptName": "Mutexes and Locks",
+            "orderIndex": 2
+          },
+          {
+            "id": "node_cpp_adv_3_3",
+            "conceptName": "Condition Variables",
+            "orderIndex": 3
+          },
+          {
+            "id": "node_cpp_adv_3_4",
+            "conceptName": "Atomics and Memory Models",
+            "orderIndex": 4
+          },
+          {
+            "id": "node_cpp_adv_3_5",
+            "conceptName": "Coroutines (C++20)",
+            "orderIndex": 5
+          }
+        ]
+      },
+      {
+        "id": "mod_cpp_adv_4",
+        "title": "Performance and Optimization",
+        "orderIndex": 4,
+        "moduleType": "core",
+        "nodes": [
+          {
+            "id": "node_cpp_adv_4_1",
+            "conceptName": "Cache Locality and Data Oriented Design",
+            "orderIndex": 1
+          },
+          {
+            "id": "node_cpp_adv_4_2",
+            "conceptName": "SIMD and Vectorization",
+            "orderIndex": 2
+          },
+          {
+            "id": "node_cpp_adv_4_3",
+            "conceptName": "Branch Prediction",
+            "orderIndex": 3
+          },
+          {
+            "id": "node_cpp_adv_4_4",
+            "conceptName": "Compile Time vs Runtime Poloymorphism",
+            "orderIndex": 4
+          }
+        ]
+      }
+    ]
   }
 ]
