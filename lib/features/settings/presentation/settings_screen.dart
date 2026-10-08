@@ -23,10 +23,10 @@ class SettingsScreen extends StatelessWidget {
       await dbFile.copy(exportPath);
       
       if (context.mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Exported to \$exportPath')));
+        ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Exported to $exportPath')));
       }
     } catch (e) {
-      if (context.mounted) ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Export failed: \$e')));
+      if (context.mounted) ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Export failed: $e')));
     }
   }
 

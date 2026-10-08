@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
 import 'package:html/parser.dart' as html_parser;
 import 'dart:convert';
@@ -38,11 +39,10 @@ class WebSearchEngine {
     
     final siteQuery = sites.join(' OR ');
     final searchQuery = '$siteQuery $cleanQuery';
-    final encodedDDG = Uri.encodeComponent('https://html.duckduckgo.com/html/?q=${Uri.encodeComponent(searchQuery)}');
-    final url = Uri.parse('https://corsproxy.io/?url=$encodedDDG');
+    final targetUrl = kIsWeb ? Uri.parse('https://corsproxy.io/?url=${Uri.encodeComponent('https://html.duckduckgo.com/html/?q=${Uri.encodeComponent(searchQuery)}')}') : Uri.parse('https://html.duckduckgo.com/html/?q=${Uri.encodeComponent(searchQuery)}');
 
     try {
-      final response = await http.get(url, headers: {
+      final response = await http.get(targetUrl, headers: {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36'
       }).timeout(const Duration(seconds: 8));
       

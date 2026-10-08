@@ -50,12 +50,12 @@ class DiscoveryEngine extends ChangeNotifier {
       if (node.status != DiscoveryStatus.pending) continue;
       
       try {
-        final proxyUrl = Uri.parse('https://corsproxy.io/?url=${Uri.encodeComponent(currentUrl)}');
-        final response = await http.get(proxyUrl);
+        final targetUrl = kIsWeb ? Uri.parse('https://corsproxy.io/?url=${Uri.encodeComponent(currentUrl)}') : Uri.parse(currentUrl);
+        final response = await http.get(targetUrl);
         
         if (response.statusCode != 200) {
           node.status = DiscoveryStatus.blocked;
-          node.errorReason = 'HTTP \${response.statusCode}';
+          node.errorReason = 'HTTP ${response.statusCode}';
           node.isSelected = false;
         } else {
           final document = html_parser.parse(response.body);

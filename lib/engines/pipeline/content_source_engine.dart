@@ -10,6 +10,8 @@ import '../study_page_builder/rendered_document.dart';
 import '../knowledge_extraction/models/knowledge_artifact.dart';
 
 
+import 'package:flutter/foundation.dart';
+
 class ContentSourceEngine {
   final AppDatabase _db;
   final ParserRegistry _parserRegistry;
@@ -20,8 +22,8 @@ class ContentSourceEngine {
   Future<RenderedStudyDocument> ingestFromUrl(String url) async {
     final adapter = _parserRegistry.getAdapterForUrl(url);
     
-    final proxyUrl = Uri.parse('https://corsproxy.io/?url=${Uri.encodeComponent(url)}');
-    final response = await http.get(proxyUrl).timeout(const Duration(seconds: 10));
+    final targetUrl = kIsWeb ? Uri.parse('https://corsproxy.io/?url=${Uri.encodeComponent(url)}') : Uri.parse(url);
+    final response = await http.get(targetUrl).timeout(const Duration(seconds: 10));
     
     if (response.statusCode != 200) {
       throw Exception('Failed to fetch content from $url');

@@ -86,16 +86,16 @@ class _LibraryScreenState extends State<LibraryScreen> {
               ],
             ),
             const SizedBox(height: 16),
-            Text("Processing: \${runningJob?.url ?? 'Waiting...'}"),
+            Text("Processing: ${runningJob?.url ?? 'Waiting'}"),
             const SizedBox(height: 8),
             LinearProgressIndicator(value: runningJob != null ? null : 0.0),
             const SizedBox(height: 16),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text('\$pendingCount items remaining'),
+                Text('$pendingCount items remaining'),
                 if (failedCount > 0)
-                  Text('\$failedCount failed', style: const TextStyle(color: Colors.red)),
+                  Text('$failedCount failed', style: const TextStyle(color: Colors.red)),
               ],
             ),
             const SizedBox(height: 8),
@@ -124,7 +124,7 @@ class _LibraryScreenState extends State<LibraryScreen> {
             if (jobs.length > 10)
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: Text('+ \${jobs.length - 10} more in queue...', style: const TextStyle(color: Colors.grey, fontStyle: FontStyle.italic)),
+                child: Text('+ ${jobs.length - 10} more in queue...', style: const TextStyle(color: Colors.grey, fontStyle: FontStyle.italic)),
               ),
           ],
         ),
