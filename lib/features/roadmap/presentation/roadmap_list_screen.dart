@@ -35,6 +35,14 @@ class _RoadmapListScreenState extends State<RoadmapListScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Roadmaps')),
+      floatingActionButton: FloatingActionButton.extended(
+        onPressed: () async {
+          await context.push('/roadmap_generator');
+          _loadData();
+        },
+        icon: const Icon(Icons.add),
+        label: const Text('Auto-Curate'),
+      ),
       body: _isLoading 
         ? const Center(child: CircularProgressIndicator())
         : ListView.builder(

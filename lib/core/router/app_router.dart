@@ -12,6 +12,7 @@ import '../../features/search/presentation/knowledge_search_screen.dart';
 import '../../features/roadmap/presentation/roadmap_list_screen.dart';
 import '../../features/roadmap/presentation/roadmap_detail_screen.dart';
 import '../../features/roadmap/presentation/concept_resolution_screen.dart';
+import '../../features/roadmap/presentation/roadmap_generator_screen.dart';
 
 import '../../features/revision/presentation/active_recall_screen.dart';
 import '../../features/home/presentation/dashboard_screen.dart';
@@ -97,6 +98,10 @@ final routerProvider = Provider<GoRouter>((ref) {
             roadmapContext: roadmapContext,
           );
         },
+      ),
+      GoRoute(
+        path: '/roadmap_generator',
+        builder: (context, state) => const RoadmapGeneratorScreen(),
       ),
       GoRoute(
         path: '/recall',

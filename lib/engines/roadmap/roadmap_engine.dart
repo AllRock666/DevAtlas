@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:drift/drift.dart' as drift;
+import 'package:uuid/uuid.dart';
 import '../storage/database.dart';
 
 class RoadmapNodeState {
@@ -160,5 +161,43 @@ class RoadmapEngine {
     }
 
     return null;
+  }
+
+  Future<void> createDynamicRoadmap(String title, String description, List<Map<String, dynamic>> structuredData) async {
+    final roadmapId = 'roadmap_${const Uuid().v4()}';
+    
+    await _db.into(_db.roadmaps).insertOnConflictUpdate(RoadmapsCompanion.insert(
+      id: roadmapId,
+      title: title,
+      description: drift.Value(description),
+      category: drift.Value('Custom'),
+      roadmapType: drift.Value('dynamic'),
+    ));
+
+    int modIndex = 1;
+    for (var modData in structuredData) {
+      final modId = 'mod_${const Uuid().v4()}';
+      
+      await _db.into(_db.roadmapModules).insertOnConflictUpdate(RoadmapModulesCompanion.insert(
+        id: modId,
+        roadmapId: roadmapId,
+        title: modData['title'] ?? 'Module $modIndex',
+        orderIndex: modIndex,
+        moduleType: drift.Value('core'),
+      ));
+
+      final nodes = modData['nodes'] as List<String>;
+      int nodeIndex = 1;
+      for (var nodeName in nodes) {
+        await _db.into(_db.roadmapNodes).insertOnConflictUpdate(RoadmapNodesCompanion.insert(
+          id: 'node_${const Uuid().v4()}',
+          moduleId: modId,
+          conceptName: nodeName.trim(),
+          orderIndex: nodeIndex,
+        ));
+        nodeIndex++;
+      }
+      modIndex++;
+    }
   }
 }
