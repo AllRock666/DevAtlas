@@ -97,73 +97,57 @@ class RuleBasedKnowledgeQueryEngine implements KnowledgeQueryEngine {
     final defEl = await getBestElement('Definition');
     if (defEl != null) {
       blocks.add(StudyParagraphBlock(id: 'def', text: defEl.contentSummary));
-    } else {
-      blocks.add(CalloutBlock(id: 'm_def', text: 'Definition Unavailable', calloutType: 'warning'));
     }
 
     // 2. Why Does It Exist? (Purpose)
-    blocks.add(StudySectionBlock(id: 's2', heading: 'Why Does It Exist?'));
     final purposeEl = await getBestElement('Purpose');
     if (purposeEl != null) {
+      blocks.add(StudySectionBlock(id: 's2', heading: 'Why Does It Exist?'));
       blocks.add(StudyParagraphBlock(id: 'p_pur', text: purposeEl.contentSummary));
-    } else {
-      blocks.add(CalloutBlock(id: 'm_pur', text: 'Explanation Unavailable', calloutType: 'warning'));
     }
 
     // 3. When Should I Use It?
-    blocks.add(StudySectionBlock(id: 's3', heading: 'When Should I Use It?'));
     final tipEl = await getBestElement('Tip');
     if (tipEl != null) {
+      blocks.add(StudySectionBlock(id: 's3', heading: 'When Should I Use It?'));
       blocks.add(CalloutBlock(id: 'p_tip', text: tipEl.contentSummary, calloutType: 'tip'));
-    } else {
-      blocks.add(CalloutBlock(id: 'm_tip', text: 'Use cases Unavailable', calloutType: 'warning'));
     }
 
     // 4. When Should I Avoid It?
-    blocks.add(StudySectionBlock(id: 's4', heading: 'When Should I Avoid It?'));
     final avoidEl = await getBestElement('Tradeoff');
     if (avoidEl != null) {
+      blocks.add(StudySectionBlock(id: 's4', heading: 'When Should I Avoid It?'));
       blocks.add(CalloutBlock(id: 'p_trd', text: avoidEl.contentSummary, calloutType: 'warning'));
-    } else {
-      blocks.add(CalloutBlock(id: 'm_trd', text: 'Tradeoffs Unavailable', calloutType: 'warning'));
     }
 
     // 5. Complexity
-    blocks.add(StudySectionBlock(id: 's5', heading: 'Complexity'));
     final compEl = await getBestElement('Complexity Analysis');
     if (compEl != null) {
+      blocks.add(StudySectionBlock(id: 's5', heading: 'Complexity'));
       blocks.add(StudyParagraphBlock(id: 'p_comp', text: compEl.contentSummary));
       blocks.add(StudyParagraphBlock(id: 'attr_comp', text: 'Source: ${compEl.cardId}'));
-    } else {
-      blocks.add(CalloutBlock(id: 'm_comp', text: 'Complexity Unavailable', calloutType: 'warning'));
     }
 
     // 6. Code Examples
-    blocks.add(StudySectionBlock(id: 's6', heading: 'Code Example'));
     final codeEl = await getBestElement('Code Example');
     if (codeEl != null) {
+      blocks.add(StudySectionBlock(id: 's6', heading: 'Code Example'));
       blocks.add(CodeBlock(id: 'c_code', code: codeEl.contentSummary, language: topConcept.language ?? 'cpp'));
       blocks.add(StudyParagraphBlock(id: 'attr_code', text: 'Source: ${codeEl.cardId}'));
-    } else {
-      blocks.add(CalloutBlock(id: 'm_code', text: 'Code Unavailable', calloutType: 'warning'));
     }
 
     // 7. Common Mistakes
-    blocks.add(StudySectionBlock(id: 's7', heading: 'Common Mistakes'));
     final warnEl = await getBestElement('Warning');
     if (warnEl != null) {
+      blocks.add(StudySectionBlock(id: 's7', heading: 'Common Mistakes'));
       blocks.add(CalloutBlock(id: 'p_warn', text: warnEl.contentSummary, calloutType: 'warning'));
-    } else {
-      blocks.add(CalloutBlock(id: 'm_warn', text: 'Mistakes Unavailable', calloutType: 'warning'));
     }
 
     // 8. Pattern Recognition
-    blocks.add(StudySectionBlock(id: 's8', heading: 'Pattern Recognition'));
     final patEl = await getBestElement('Pattern Recognition');
     if (patEl != null) {
+      blocks.add(StudySectionBlock(id: 's8', heading: 'Pattern Recognition'));
       blocks.add(StudyParagraphBlock(id: 'p_pat', text: patEl.contentSummary));
-    } else {
-      blocks.add(CalloutBlock(id: 'm_pat', text: 'Patterns Unavailable', calloutType: 'warning'));
     }
 
     // 9. Problem Roadmap
