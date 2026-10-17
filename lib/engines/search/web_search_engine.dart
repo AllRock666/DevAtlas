@@ -1,7 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
 import 'package:html/parser.dart' as html_parser;
-import 'dart:convert';
 
 class WebSearchResult {
   final String title;
@@ -88,7 +87,7 @@ class WebSearchEngine {
         return results;
       }
     } catch (e) {
-      print('Web search error: $e');
+      debugPrint('Web search error: $e');
     }
     
     return [];

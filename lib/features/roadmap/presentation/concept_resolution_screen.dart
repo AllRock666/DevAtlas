@@ -66,7 +66,6 @@ class _ConceptResolutionScreenState extends State<ConceptResolutionScreen> {
 
   Future<void> _pollForCompletion(String url) async {
     final db = di.getIt<AppDatabase>();
-    final queue = di.getIt<ImportQueueManager>();
     
     while (_isImporting && mounted) {
       final job = await (db.select(db.importQueueItems)..where((t) => t.url.equals(url))).getSingleOrNull();
@@ -120,7 +119,7 @@ class _ConceptResolutionScreenState extends State<ConceptResolutionScreen> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              '${widget.conceptName}',
+              widget.conceptName,
               style: Theme.of(context).textTheme.headlineMedium?.copyWith(fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 8),

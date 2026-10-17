@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../features/home/presentation/home_screen.dart';
-
 import '../../features/library/presentation/library_screen.dart';
 import '../../engines/discovery/presentation/discovery_screen.dart';
 import '../../features/settings/presentation/settings_screen.dart';

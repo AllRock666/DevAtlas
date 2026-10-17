@@ -1,7 +1,6 @@
 import 'dart:async';
 import 'package:flutter/foundation.dart';
 import 'package:uuid/uuid.dart';
-import '../../di/injection.dart' as di;
 import '../pipeline/content_source_engine.dart';
 import '../storage/database.dart';
 import '../pipeline/url_normalizer.dart';
@@ -130,7 +129,7 @@ class ImportQueueManager extends ChangeNotifier {
     notifyListeners();
     
     try {
-        final document = await _engine.ingestFromUrl(_currentJob!.url);
+        await _engine.ingestFromUrl(_currentJob!.url);
         
         // Polite crawl delay
         await Future.delayed(const Duration(milliseconds: 1000));

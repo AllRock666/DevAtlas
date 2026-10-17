@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'package:flutter/foundation.dart';
 import 'rendered_document.dart';
 import '../storage/database.dart';
 
@@ -13,13 +14,13 @@ class DbStudyPageBuilder implements StudyPageBuilder {
 
   @override
   Future<RenderedStudyDocument> buildPage(String cardId) async {
-    print('DbStudyPageBuilder: Requesting cardId = $cardId');
+    debugPrint('DbStudyPageBuilder: Requesting cardId = $cardId');
     final card = await (_db.select(_db.knowledgeCards)..where((t) => t.id.equals(cardId))).getSingleOrNull();
-    print('DbStudyPageBuilder: found card? ${card != null}');
+    debugPrint('DbStudyPageBuilder: found card? ${card != null}');
     
     if (card != null) {
       if (card.blocksJson != null && card.blocksJson!.isNotEmpty) {
-        print('DbStudyPageBuilder: blocksJson is not empty, length: ${card.blocksJson!.length}');
+        debugPrint('DbStudyPageBuilder: blocksJson is not empty, length: ${card.blocksJson!.length}');
         // Full offline read - zero parsing overhead
         final List<dynamic> jsonList = jsonDecode(card.blocksJson!);
         final blocks = jsonList.map((json) => StudyBlock.fromJson(json)).toList();
@@ -30,11 +31,11 @@ class DbStudyPageBuilder implements StudyPageBuilder {
           blocks: blocks,
         );
       } else {
-        print('DbStudyPageBuilder: blocksJson is NULL or EMPTY');
+        debugPrint('DbStudyPageBuilder: blocksJson is NULL or EMPTY');
       }
     }
 
-    print('DbStudyPageBuilder: Returning mock Not Found');
+    debugPrint('DbStudyPageBuilder: Returning mock Not Found');
     return RenderedStudyDocument(
       cardId: 'mock',
       title: 'Not Found',

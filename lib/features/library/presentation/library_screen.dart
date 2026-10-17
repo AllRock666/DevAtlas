@@ -155,7 +155,7 @@ class _LibraryScreenState extends State<LibraryScreen> {
               Expanded(
                 flex: 1,
                 child: DropdownButtonFormField<String>(
-                  value: _importMode,
+                  initialValue: _importMode,
                   decoration: const InputDecoration(
                     labelText: 'Import Scope',
                     border: OutlineInputBorder(),

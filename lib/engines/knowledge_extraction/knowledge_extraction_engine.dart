@@ -72,7 +72,7 @@ class KnowledgeExtractionEngine {
           confidence: 0.95,
           provenance: Provenance(sourceBlockId: block.id, parserVersion: '1.2.0', extractionRule: 'code_block_v1'),
           elementType: 'Code Example',
-          contentSummary: '${block.language} snippet (${lineCount} lines)',
+          contentSummary: '${block.language} snippet ($lineCount lines)',
         ));
       }
 

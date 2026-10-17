@@ -49,7 +49,7 @@ class _LearningProgressWidgetState extends State<LearningProgressWidget> {
   @override
   Widget build(BuildContext context) {
     return Card(
-      color: Theme.of(context).colorScheme.surfaceVariant,
+      color: Theme.of(context).colorScheme.surfaceContainerHighest,
       child: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
@@ -79,7 +79,7 @@ class _LearningProgressWidgetState extends State<LearningProgressWidget> {
     return ChoiceChip(
       label: Text(label),
       selected: isSelected,
-      selectedColor: color.withOpacity(0.2),
+      selectedColor: color.withValues(alpha: 0.2),
       onSelected: (selected) {
         if (selected) _updateStatus(value);
       },

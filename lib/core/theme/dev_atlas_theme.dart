@@ -21,7 +21,6 @@ class DevAtlasTheme {
         surface: const Color(0xFF1E1E1E),
       ),
       textTheme: _buildTextTheme(base.textTheme),
-      useMaterial3: true,
     );
   }
 
@@ -35,7 +34,6 @@ class DevAtlasTheme {
         surface: Colors.black,
       ),
       textTheme: _buildTextTheme(base.textTheme),
-      useMaterial3: true,
     );
   }
 
@@ -49,7 +47,6 @@ class DevAtlasTheme {
         surface: const Color(0xFFF4ECD8),
       ),
       textTheme: _buildTextTheme(base.textTheme),
-      useMaterial3: true,
     );
   }
   
@@ -63,7 +60,6 @@ class DevAtlasTheme {
         surface: Colors.white,
       ),
       textTheme: _buildTextTheme(base.textTheme),
-      useMaterial3: true,
     );
   }
 }

@@ -62,7 +62,7 @@ class _RoadmapListScreenState extends State<RoadmapListScreen> {
                       Container(
                         padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
                         decoration: BoxDecoration(
-                          color: isCurated ? Colors.blue.withOpacity(0.1) : Colors.orange.withOpacity(0.1),
+                          color: isCurated ? Colors.blue.withValues(alpha: 0.1) : Colors.orange.withValues(alpha: 0.1),
                           borderRadius: BorderRadius.circular(12),
                           border: Border.all(color: isCurated ? Colors.blue : Colors.orange),
                         ),

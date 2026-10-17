@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:drift/drift.dart' as drift;
 import 'package:uuid/uuid.dart';
@@ -62,7 +63,7 @@ class RoadmapEngine {
         }
       }
     } catch (e) {
-      print('Failed to seed roadmaps: $e');
+      debugPrint('Failed to seed roadmaps: $e');
     }
   }
   

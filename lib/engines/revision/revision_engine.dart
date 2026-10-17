@@ -3,7 +3,6 @@ import 'package:drift/drift.dart' as drift;
 import '../storage/database.dart';
 
 import '../knowledge_extraction/models/knowledge_artifact.dart';
-import '../../di/injection.dart' as di;
 
 enum ActivityType {
   quickRevision,

@@ -71,7 +71,7 @@ class _RoadmapDetailScreenState extends State<RoadmapDetailScreen> {
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
                 decoration: BoxDecoration(
-                  color: isCurated ? Colors.blue.withOpacity(0.1) : Colors.orange.withOpacity(0.1),
+                  color: isCurated ? Colors.blue.withValues(alpha: 0.1) : Colors.orange.withValues(alpha: 0.1),
                   borderRadius: BorderRadius.circular(12),
                   border: Border.all(color: isCurated ? Colors.blue : Colors.orange),
                 ),
@@ -117,10 +117,11 @@ class _RoadmapDetailScreenState extends State<RoadmapDetailScreen> {
                           context.push('/study/${nodeState.node.linkedCardId}');
                         } else {
                           final resolvedCardId = await _engine.resolveLocalNodeLink(nodeState.node.id, nodeState.node.conceptName);
-                          if (resolvedCardId != null && mounted) {
+                          if (!context.mounted) return;
+                          if (resolvedCardId != null) {
                             context.push('/study/$resolvedCardId');
                             _loadData();
-                          } else if (mounted) {
+                          } else {
                             final encodedContext = Uri.encodeComponent(_roadmap?.title ?? '');
                             final encodedConcept = Uri.encodeComponent(nodeState.node.conceptName);
                             context.push('/resolve_concept/${nodeState.node.id}/$encodedConcept/$encodedContext');

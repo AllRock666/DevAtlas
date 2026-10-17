@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:drift/drift.dart' as drift;
 import 'models/knowledge_query_response.dart';
 import '../storage/database.dart';
@@ -71,7 +72,7 @@ class RuleBasedKnowledgeQueryEngine implements KnowledgeQueryEngine {
             targetId: card.id
           ));
         }
-        print('Returning fallback KnowledgeQueryResponse with ${blocks.length} blocks and ${actions.length} actions.');
+        debugPrint('Returning fallback KnowledgeQueryResponse with ${blocks.length} blocks and ${actions.length} actions.');
         return KnowledgeQueryResponse(query: input, intentDetected: 'search', primaryConcept: input, genericBlocks: blocks, navigationActions: actions);
       }
 

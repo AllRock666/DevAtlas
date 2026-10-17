@@ -134,9 +134,9 @@ class _RoadmapGeneratorScreenState extends State<RoadmapGeneratorScreen> {
             Container(
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
-                color: Colors.blue.withOpacity(0.1),
+                color: Colors.blue.withValues(alpha: 0.1),
                 borderRadius: BorderRadius.circular(12),
-                border: Border.all(color: Colors.blue.withOpacity(0.3)),
+                border: Border.all(color: Colors.blue.withValues(alpha: 0.3)),
               ),
               child: const Text(
                 'Provide a target URL and DevAtlas will automatically scrape its Table of Contents to build a personalized curriculum. Note: Use standard documentation sites (like python.org or learncpp.com). Javascript-only sites may fail to parse.',

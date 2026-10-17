@@ -171,7 +171,7 @@ class QuoteBlockWidget extends ConsumerWidget {
       margin: EdgeInsets.symmetric(vertical: prefs.paragraphSpacing),
       padding: const EdgeInsets.only(left: 16.0, top: 8.0, bottom: 8.0),
       decoration: BoxDecoration(border: Border(left: BorderSide(color: Theme.of(context).colorScheme.primary, width: 4.0))),
-      child: Text(block.text, style: _getFont(prefs.fontFamily, fontSize: prefs.fontSize, height: prefs.lineHeight, color: prefs.theme.textColor.withOpacity(0.7), fontWeight: FontWeight.w400).copyWith(fontStyle: FontStyle.italic)),
+      child: Text(block.text, style: _getFont(prefs.fontFamily, fontSize: prefs.fontSize, height: prefs.lineHeight, color: prefs.theme.textColor.withValues(alpha: 0.7), fontWeight: FontWeight.w400).copyWith(fontStyle: FontStyle.italic)),
     );
   }
 }
@@ -210,7 +210,7 @@ class DividerBlockWidget extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final prefs = ref.watch(readerPreferencesProvider);
-    return Padding(padding: EdgeInsets.symmetric(vertical: prefs.paragraphSpacing * 1.5), child: Divider(color: prefs.theme.textColor.withOpacity(0.1)));
+    return Padding(padding: EdgeInsets.symmetric(vertical: prefs.paragraphSpacing * 1.5), child: Divider(color: prefs.theme.textColor.withValues(alpha: 0.1)));
   }
 }
 
@@ -226,7 +226,7 @@ class TableBlockWidget extends ConsumerWidget {
       child: SingleChildScrollView(
         scrollDirection: Axis.horizontal,
         child: Table(
-          border: TableBorder.all(color: prefs.theme.textColor.withOpacity(0.2)),
+          border: TableBorder.all(color: prefs.theme.textColor.withValues(alpha: 0.2)),
           defaultColumnWidth: const IntrinsicColumnWidth(),
           children: block.rows.map((row) {
             return TableRow(
@@ -256,17 +256,17 @@ class CalloutBlockWidget extends ConsumerWidget {
 
     switch (block.calloutType) {
       case 'warning':
-        bgColor = Colors.orange.withOpacity(0.1);
+        bgColor = Colors.orange.withValues(alpha: 0.1);
         icon = Icons.warning_amber_rounded;
         iconColor = Colors.orange;
         break;
       case 'tip':
-        bgColor = Colors.green.withOpacity(0.1);
+        bgColor = Colors.green.withValues(alpha: 0.1);
         icon = Icons.lightbulb_outline;
         iconColor = Colors.green;
         break;
       default:
-        bgColor = Theme.of(context).colorScheme.primary.withOpacity(0.1);
+        bgColor = Theme.of(context).colorScheme.primary.withValues(alpha: 0.1);
         icon = Icons.info_outline;
         iconColor = Theme.of(context).colorScheme.primary;
     }
@@ -276,7 +276,7 @@ class CalloutBlockWidget extends ConsumerWidget {
       decoration: BoxDecoration(
         color: bgColor,
         borderRadius: BorderRadius.circular(8),
-        border: Border.all(color: iconColor.withOpacity(0.2)),
+        border: Border.all(color: iconColor.withValues(alpha: 0.2)),
       ),
       padding: const EdgeInsets.all(16.0),
       child: Row(
@@ -302,13 +302,13 @@ class ComplexityTableWidget extends ConsumerWidget {
       decoration: BoxDecoration(
         color: prefs.theme.surfaceColor,
         borderRadius: BorderRadius.circular(8),
-        border: Border.all(color: prefs.theme.textColor.withOpacity(0.1)),
+        border: Border.all(color: prefs.theme.textColor.withValues(alpha: 0.1)),
       ),
       padding: const EdgeInsets.all(16.0),
       child: Column(
         children: [
           Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [Text('Time Complexity', style: _getFont(prefs.fontFamily, fontSize: prefs.fontSize, fontWeight: FontWeight.bold, color: prefs.theme.textColor)), Text(block.timeComplexity, style: GoogleFonts.jetBrainsMono(fontSize: prefs.codeFontSize, color: prefs.theme.textColor))]),
-          Divider(color: prefs.theme.textColor.withOpacity(0.1), height: 24),
+          Divider(color: prefs.theme.textColor.withValues(alpha: 0.1), height: 24),
           Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [Text('Space Complexity', style: _getFont(prefs.fontFamily, fontSize: prefs.fontSize, fontWeight: FontWeight.bold, color: prefs.theme.textColor)), Text(block.spaceComplexity, style: GoogleFonts.jetBrainsMono(fontSize: prefs.codeFontSize, color: prefs.theme.textColor))])
         ]
       )

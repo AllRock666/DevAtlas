@@ -144,7 +144,7 @@ Future<String?> _searchDuckDuckGo(String query) async {
       }
     }
   } catch (e) {
-    print('Internal resolver error: $e');
+    debugPrint('Internal resolver error: $e');
   }
   return null;
 }

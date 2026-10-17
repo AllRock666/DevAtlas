@@ -82,7 +82,7 @@ class ContentSourceEngine {
   Future<void> _autoAssignToRoadmap(KnowledgeArtifact artifact, RenderedStudyDocument document, String sourceName) async {
     // 1. Determine Target Curated Roadmap
     String? targetCuratedRoadmapId;
-    final lang = artifact.language?.toLowerCase() ?? '';
+    final lang = artifact.language.toLowerCase();
     final cat = artifact.category.toLowerCase();
     
     if (lang == 'c++' || lang == 'cpp') {
@@ -188,7 +188,7 @@ class ContentSourceEngine {
     }
 
     // Module based on Source Name (Preserve Hierarchy)
-    final modId = 'mod_dyn_${sourcePrefix}_${safeCategory}';
+    final modId = 'mod_dyn_${sourcePrefix}_$safeCategory';
     final mod = await (_db.select(_db.roadmapModules)..where((t) => t.id.equals(modId))).getSingleOrNull();
     if (mod == null) {
       await _db.into(_db.roadmapModules).insertOnConflictUpdate(

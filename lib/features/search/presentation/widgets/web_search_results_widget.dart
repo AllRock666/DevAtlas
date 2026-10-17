@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 import '../../../../engines/search/web_search_engine.dart';
 import '../../../../engines/import_queue/import_queue_manager.dart';
 import '../../../../di/injection.dart' as di;
